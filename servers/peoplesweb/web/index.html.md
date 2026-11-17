@@ -1,9 +1,9 @@
 # Audit report: servers/peoplesweb/web/index.html
 
-Project: GCE (a proposal from a project, not an auditor's report)
-Auditor: Claude (Opus 5.5), for Nimrod Talmon, GCE
+Project: Website
+Auditor: none; a proposal by Claude (Opus 5.5) for Nimrod Talmon, of the project GCE
 Date: 2026-11-17
-GLP commit: 2f469123ed710295aeedd1984afe6fc9306362a8
+GLP commit: e817b136f15a4c9d10cca4f105b86a7636ed7fa7
 
 Scope: How the site shows a parametric contract.
 Coverage: Read `notWhy` and `openBtn` in `servers/peoplesweb/web/index.html`, `has_platform` in `servers/peoplesweb/tools/build.py`, step 5 of `cascade.sh`, and `cascade/Ads/manifest.md`, `cascade/Auction/manifest.md` and `cascade/Networked-Organisation/manifest.md`. The site was not run.
