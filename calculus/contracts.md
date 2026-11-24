@@ -1,5 +1,11 @@
 # Grassroots contracts and their relations
 
+[24 November paper review](#paper-review-24-november-2026) · [Printable review (PDF)](grassroots_contracts_calculus_review_2026-11-24.pdf)
+
+Date: 2026-11-24
+
+The latest entry reviews the supplied manuscript. The GLP commit below identifies the 23 November catalogue experiment.
+
 ## Contract generation and inheritance, 23 November 2026
 
 Project: Calculus
@@ -307,6 +313,8 @@ The finding holds. The paper has no substitution; Provenance Groups is to keep t
 
 23 November 2026. Checked the definition against both versions of Message. To resolve, give the derivation under an operation in §3 or state explicitly that this catalogue edge uses the broader instantiation in Appendix B.
 
+24 November 2026. Paper verification. Definition 18(4), p. 15, and the discussion following Corollary 30, p. 29, retain the projection in the previous calculus. The project’s planned strengthening keeps the original message. Finding 8 remains open until the revised contract is available for verification. [Project answer in PR #82](https://github.com/udi-shapiro/Grassroots-Audit/pull/82)
+
 ## Finding 9. Agents strengthens the inherited Enter clause
 
 Severity: medium
@@ -330,3 +338,236 @@ The finding holds. The sentence is in Section 3 of the Calculus paper. See: ESha
 ### Verification
 
 23 November 2026. Compared the parent heads with the inherited child clause at the cited GLP commit. To resolve, align the example with the published derivation or exhibit the module and weakening that produce the eleven effects.
+
+24 November 2026. Correction verified in the supplied paper, p. 5, immediately after Definition 10. The replacement explicitly includes augmentation and extension. The earlier pure-weakening claim has been removed. This resolves the published wording in Finding 9. The next catalogue review will examine the concrete derivation. [Project answer in PR #82](https://github.com/udi-shapiro/Grassroots-Audit/pull/82)
+
+## Paper review, 24 November 2026
+
+[Download the six-page paper review (PDF)](grassroots_contracts_calculus_review_2026-11-24.pdf)
+
+**Source and scope.** *Grassroots Contracts Calculus*, author-supplied 34-page PDF dated 24 November 2026, SHA-256 `8a041b471639cee62991cfd581f5fd6e5686e68113911ebd402cadfafa67a717`. Read §§1–4 and Appendices A–C, including Figure 1, Table 1 and the proofs. The version under review is identified by this PDF. GLP implementation, catalogue, website and cascade verification await a separate review.
+
+**Assessment.** The revised draft gives a direct account of a clause as an atomic change to sets of facts. Its main mathematical claim still needs a theorem for the operations in §3. The proof in Appendix B uses a different operation for combining contracts. When two descendants add different conditions to the same ancestral act, ordinary union enables an act that the appendix’s composition disables.
+
+Definition 3 now grounds data variables with terms of their declared types. Definition 4 specifies what happens when an update would both add and remove an atom, and excludes steps that change no state. These decisions make it possible to test the semantics on a single clause. The next step is to make the initial states and the passage from a clause to a protocol equally explicit.
+
+**Earlier findings**
+
+**Agents, Audit #80.** Paper correction verified. The sentence after Definition 10 on p. 5 now says that Agents extends and augments a module of Guardians and Forwarding. Augmentation admits the added conclusions that refuted the earlier claim of pure weakening. Giving the intermediate contracts in order would make the example checkable under Definition 8. This verification concerns that sentence. [Ticket #80](https://github.com/udi-shapiro/Grassroots-Audit/issues/80) · [Project answer](https://github.com/udi-shapiro/Grassroots-Audit/pull/82)
+
+**Provenance Groups, Audit #79.** Open. The project answered that it will retain the inherited message and add the item by strengthening. That would resolve the earlier arity objection. The supplied draft still gives the projection in Definition 18(4) and after Corollary 30. Label those passages as historical or show the new rule alongside them. Verification of the revised contract awaits the repository review. [Ticket #79](https://github.com/udi-shapiro/Grassroots-Audit/issues/79) · [Project answer](https://github.com/udi-shapiro/Grassroots-Audit/pull/82)
+
+**Table 1.** I counted 66 contract rows in Table 1 (pp. 19–25), 35 marked “wards” and 63 with numeric GLP output. Auction, Networked Organisation and Ads have “param.” instead. The eight numeric column totals also match their printed sums. The 91-contract run of 23 November is a separate, previously published experiment. The 66-row table supplies evidence for the version it describes. Give it an immutable source revision and identify which definitions its tools implement. [23 November catalogue run](#contract-generation-and-inheritance-23-november-2026)
+
+### Revision priorities
+
+Resolve the scope of the commutation result and the state/protocol semantics first (Findings 10–13). Then specify when the operations return well-formed clauses and repair the two appendix claims (Findings 14–16). Finding 17 is a local correction to one proof.
+
+1. After Figure 1, state the two main results with their domains. Proposition 17 recovers a normalized flat text up to Definition 13 under a fixed vocabulary. Page 14 says the compiler also uses retained definitions to reconstruct the original phrasing. Use that distinction in the abstract and the experimental summary.
+2. Move the implementation and results paragraphs on pp. 6–7 before the bibliography. Introduce the status of Appendix B, currently titled “Old Text”, before using its results. Keep a worked example that follows one shared act from the English clauses through both sides of the square.
+3. Use “augments” consistently in the summary on p. 2 and Definition 8(5). In §4, distinguish clause weakening from the run restriction of Definition 24. The latter allows intermediate parent configurations. Theorem 29 concerns preservation of a syntactic grassroots check. A conservativity assertion about all old-language consequences would need a separate statement and proof.
+
+### Findings in this paper version
+
+| Finding | Manuscript location | Severity |
+| --- | --- | --- |
+| [10. Commutation and ordinary union](#finding-10-the-commutation-theorem-covers-a-different-union) | §3 and Theorem 19 | high |
+| [11. Initial state and declared properties](#finding-11-the-empty-initial-state-violates-the-stated-reflexivity-constraint) | Definitions 2–5 | high |
+| [12. Constraints in a larger population](#finding-12-participant-local-validation-does-not-preserve-arbitrary-configuration-constraints) | Definitions 4–5 | high |
+| [13. Grammar, sets and multiplicities](#finding-13-the-formal-grammar-and-the-proofs-use-different-state-and-term-languages) | §2, Appendices A–C | high |
+| [14. Well-formed operation results](#finding-14-guard-weakening-can-produce-an-ill-formed-clause) | Definitions 1 and 6 | medium |
+| [15. Extension after redundancy removal](#finding-15-removing-redundant-implications-can-delete-an-inherited-clause-during-extension) | Definitions 18 and 22 | medium |
+| [16. Identification in relaxation](#finding-16-the-relaxation-proof-omits-the-identification-of-two-agent-names) | Definition 18(6), Theorem 19 | medium |
+| [17. Guard inclusion in Proposition 28](#finding-17-the-proof-of-proposition-28-reverses-guard-inclusion-in-case-b) | Proposition 28(b), proof | low |
+
+## Finding 10. The commutation theorem covers a different union
+
+Severity: high
+
+Project: Calculus
+
+Ticket: [#84](https://github.com/udi-shapiro/Grassroots-Audit/issues/84)
+
+**Figure 1, pp. 1–2. Definitions 7(2) and 10, pp. 4–5. Definitions 12(1) and 18(5), Theorem 19 and Corollary 20, pp. 11 and 15–17.**
+
+Take one ancestral act with head h and condition b. One descendant adds condition c, another adds d. Use the same guard, compatible declarations and distinct clause names where required. Ordinary set union in §3 retains both clauses. If b and c hold, d is false and the effect h is new, the left clause can fire. Appendix B’s composition identifies the two descendants of the ancestral act and produces one clause requiring b, c and d. It cannot fire in that state.
+
+Theorem 19 proves the square for Definition 18. It does not establish a square for Definition 7’s ordinary union on one side and Appendix B’s inherited-act merger on the other. The two operations agree in examples without a modified shared act, which can conceal the difference. Proposition 17 separately establishes inversion for the appendix’s flat texts modulo Definition 13, with a fixed interpretation.
+
+**Revision.** State the two translations for the §3 language, name the operations on each side and prove the corresponding cases. If the appendix documents the previous calculus, scope its theorem and the 66-contract experiment explicitly to that version. The shared-ancestor example then distinguishes what each result establishes.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. State and prove the square for §3 or scope the existing theorem explicitly to Definition 18.
+
+## Finding 11. The empty initial state violates the stated reflexivity constraint
+
+Severity: high
+
+Project: Calculus
+
+Ticket: [#85](https://github.com/udi-shapiro/Grassroots-Audit/issues/85)
+
+**§§2.1–2.2, Definitions 2–5 and the Acquaint example, pp. 2–4. Knowledge and Friendship, pp. 10, 13–14 and 18.**
+
+For a singleton population with agent p, Definition 2 gives p the empty local state. Reflexivity requires knows(p) to hold at p. Definition 4 evaluates an ordinary positive literal by membership in the stored set and requires a valid preconfiguration. Under those clauses the declared initial configuration of Knowledge violates its own constraint. Page 4 also uses empty local states as preconfigurations of Acquaint.
+
+The Friendship example exposes a related choice for symmetry. Its box on p. 13 adds or removes only friend(Alice,Bob). From a symmetric state with neither friendship present, adding only that direction produces an asymmetric poststate, which Definition 4 rejects. Pages 14 and 18 write both directions. If the one-literal form abbreviates both updates, the expansion rule belongs next to the declaration.
+
+**Revision.** Distinguish stored atoms from the atoms that hold. One option already used by the cited GSC compilation is to evaluate each local state together with its reflexive self-atoms. Specify symmetry as a constraint or give its shorthand an expansion, then work Acquaint and Befriend from admissible prestates.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Give the stored and interpreted initial states and check the Knowledge and Friendship examples under the same rule.
+
+## Finding 12. Participant-local validation does not preserve arbitrary configuration constraints
+
+Severity: high
+
+Project: Calculus
+
+Ticket: [#86](https://github.com/udi-shapiro/Grassroots-Audit/issues/86)
+
+**§2.2, Definitions 2, 4 and 5, pp. 3–4. See the transaction closure and volitional transactions-based protocol in reference [15].**
+
+Require that at most one agent holds a token, and give each agent a unary clause that lets it acquire the token when it holds none. Definition 4 admits each singleton’s empty-to-token transaction. Start with two empty agents, p and q. The protocol closure imported by Definition 5 allows p’s transaction with q stationary, then q’s with p stationary. Each step passes its participant-local check. The resulting configuration has two token holders.
+
+The constraint is decidable and permitted by the unrestricted wording on p. 3. A set of admissible local states S(P) cannot by itself express this cross-agent invariant in a product of local states. A rule about the admissibility of the entire configuration needs a compatible rule for transactions in larger populations.
+
+**Revision.** State a hypothesis ensuring that each admitted transaction preserves the constraints in every admissible larger configuration with the other agents stationary, and prove it for the declared properties. An alternative is an explicit global transition filter together with a justification of the resulting protocol semantics.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Prove preservation under adding stationary agents or give the alternative global semantics.
+
+## Finding 13. The formal grammar and the proofs use different state and term languages
+
+Severity: high
+
+Project: Calculus
+
+Ticket: [#87](https://github.com/udi-shapiro/Grassroots-Audit/issues/87)
+
+**§§2.1–2.2, pp. 2–3. Appendix A, Definition 11, pp. 7–8. Appendix B, Definitions 14–16, pp. 12–14. Appendix C, Proposition 25, p. 30.**
+
+Definition 11 is presented as the formal syntax of §2. Its Type production lists agent, integer, real and string. Its Arg production has no general functor application or set constructor. A term such as bond(i,7), for an identifier i, and the type Set(Note) used for payment on pp. 2–3 have no displayed grammar derivation. In the other direction, Definition 11 carries multiplicities and pairs of agent variables allowed to coincide. The main semantics uses sets of ground atoms, and Definition 3 assigns distinct agents to distinct agent variables.
+
+This difference reaches a proof. Proposition 25 simulates two machine counters by multiplicities. A counter value of one and a value of two give distinct multisets. The same underlying set contains a single counter atom in both cases. Individually identified notes or a stored numeric counter could distinguish them in a set model, but that needs its own encoding and preservation argument.
+
+**Revision.** Choose a formal grammar for the main language and define its groundings and transition rules there. If the legacy syntax is retained, give a translation for the fragment being used and say which results transfer. A typed payment and a zero-test after two counter increments would test the two points independently.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Type the payment example and establish the scope or translation of the multiset results.
+
+## Finding 14. Guard weakening can produce an ill-formed clause
+
+Severity: medium
+
+Project: Calculus
+
+Ticket: [#88](https://github.com/udi-shapiro/Grassroots-Audit/issues/88)
+
+**Definition 1, p. 2. Definitions 6 and 7, p. 4.**
+
+Start with the clause A:ready ← guarded by A. Definition 6(2) permits adding a guarding agent B. The resulting guard set is {A,B}, although B occurs in no head or body literal. Definition 1 requires every guard to occur among the agents of those literals. Thus this operation, with the displayed input conditions, need not return a clause.
+
+Lifting also needs a signature for the added position. Definition 7(3) supplies a variable fresh to the clause, while a typed predicate declaration needs the type of that variable. For a symmetric predicate, the declaration also needs to say which positions symmetry exchanges after the lift.
+
+**Revision.** Give the operations their domains. For guard weakening, require the agent to occur in the clause after the edit. Require well-typed literals and give lifting the added type and the rule for transporting declared properties. State closure under these side conditions.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Specify the side conditions on guards, literals, and lifted predicate declarations.
+
+## Finding 15. Removing redundant implications can delete an inherited clause during extension
+
+Severity: medium
+
+Project: Calculus
+
+Ticket: [#89](https://github.com/udi-shapiro/Grassroots-Audit/issues/89)
+
+**Definitions 12(5) and 14–15, pp. 11–13. Definition 18(1) and the normalization rule, pp. 15–16. Definition 22(2) and the claim following Definition 23, p. 26.**
+
+Let the parent have one act X with head h, body b,c and guard A. Extend it by a new act Y with the same head and guard and body b. The appendix’s redundancy rule removes X because Y can produce the same effect wherever X can. The normalized child contains Y and omits X. Definition 22(2) requires an extension to delete nothing. This contradicts the statement on p. 26 that every Definition 18 extension is an extension of the implications in that sense.
+
+The example concerns inclusion of the actual sets of implications. It does not require a counterexample to commutation of the two normalized constructions.
+
+**Revision.** Locate literal inclusion before normalization, add a hypothesis that every parent implication survives, or formulate and prove a relation on normalized sets that compares the acts they cover.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Specify at which stage extension preserves literal clause inclusion.
+
+## Finding 16. The relaxation proof omits the identification of two agent names
+
+Severity: medium
+
+Project: Calculus
+
+Ticket: [#90](https://github.com/udi-shapiro/Grassroots-Audit/issues/90)
+
+**Appendix B.1, p. 9. Definitions 15 and 18(6), pp. 12 and 15. Theorem 19, relaxation case, p. 17.**
+
+Page 9 gives a special meaning to a relaxing citation whose condition says that x is y. The text substitutes y for x throughout the act. Take an act with distinct agent names x and y, guarded by both, whose effect is record(x,y). Drop y’s separate consent and identify x with y. The extra act has one agent and effect record(y,y). Choose an ordinary record predicate that admits self-records.
+
+Definition 18(6) keeps the original head, edits the body and subtracts guards. Its formula therefore still has record(x,y) in the head. Adding an equality test to the body cannot realize the new act while its inherited grounding rule still assigns distinct agents to x and y. The proof on p. 17 repeats the body-and-guards formula.
+
+**Revision.** Define identification on the entire implication, including the head, body, guards and admissible pairs of names. Use it in both paths of the relaxation case, or exclude these citations from the theorem with an explicit hypothesis.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Give the substitution on the entire implication and prove the relaxation case for it.
+
+## Finding 17. The proof of Proposition 28 reverses guard inclusion in case (b)
+
+Severity: low
+
+Project: Calculus
+
+Ticket: [#91](https://github.com/udi-shapiro/Grassroots-Audit/issues/91)
+
+**Proposition 28(b) and (d), pp. 27–28. Appendix C, proof under “The run”, p. 31.**
+
+The proof writes G′ for the guards of the child transaction and Ĝ′ for those of the matched parent transaction. In case (b) the added child act is unguarded, and the parent act may have a guard. With one parent guard Alice, G′ is empty and Ĝ′ is {Alice}. The displayed inclusion Ĝ′ ⊆ G′ is false. In case (d) the child can add guards, so that displayed direction is appropriate there.
+
+The next construction explicitly inserts the parent guards’ volition changes before the simulated transaction. The example calls for a correction to the proof sentence. It does not disprove the run-restriction statement.
+
+**Revision.** State the inclusions separately for (b) and (d) and retain the explicit step that obtains the parent guards’ volitions.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+24 November 2026. Checked against the supplied manuscript identified above. Correct the inclusion in the proof of case (b) and distinguish it from (d).
