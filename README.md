@@ -2,6 +2,8 @@
 
 An independent audit of the Grassroots project: its contracts, code, papers, website and organisation. The project is in [EShapiro2/GLP](https://github.com/EShapiro2/GLP) and is presented at [peoplesweb.org](https://peoplesweb.org).
 
+**Villagers and village life, 24 November 2026.** All 57 selected contracts and their 71 parent references match the catalogue. The combined contract changes who can book ordinary rooms. The review examines care, shared equipment, collective works and civic notices and records five findings. [Full review](papers/Villagers__Village_Life_Grassroots_Contract.pdf.md) · [PDF](papers/villagers-village-life-review-2026-11-24.pdf) · [Reproduction script](papers/villagers-replay-2026-11-24.py)
+
 **Grassroots Contracts Calculus, five-page revision and 91-contract verification, 24 November 2026.** Six of eight earlier paper findings are resolved. The abstract still claims two unproved theorems. All 91 contracts regenerate, while two generated terms change who can retire a ward. [Combined review (PDF)](calculus/calculus-verification-2026-11-24.pdf) · [Paper review and source evidence](calculus/contracts.md#review-of-the-five-page-revision-24-november-2026) · [91-contract ledger](calculus/catalogue-verification-2026-11-24.csv)
 
 **Earlier 34-page manuscript, 24 November 2026.** Paper review of the revised operations, operational semantics, proofs and 66-contract table. [Paper review (PDF)](calculus/grassroots_contracts_calculus_review_2026-11-24.pdf) · [Findings and evidence](calculus/contracts.md#paper-review-24-november-2026)
