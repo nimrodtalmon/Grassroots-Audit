@@ -400,6 +400,10 @@ Theorem 19 proves the square for Definition 18. It does not establish a square f
 
 Awaiting a project response.
 
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved for the operations of Section 3. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. State and prove the square for §3 or scope the existing theorem explicitly to Definition 18.
@@ -423,6 +427,10 @@ The Friendship example exposes a related choice for symmetry. Its box on p. 13 a
 ### Answer
 
 Awaiting a project response.
+
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. An atom p(a) of a reflexive predicate holds at a with no stored atom (Definition Induced transactions); a head literal x:p(y) of a symmetric predicate stands for x:p(y) and y:p(x) (Section 2.1). The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
 ### Verification
 
@@ -448,6 +456,10 @@ The constraint is decidable and permitted by the unrestricted wording on p. 3. A
 
 Awaiting a project response.
 
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. Semantic constraints are on local states only; symmetry is notation, not a constraint. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. Prove preservation under adding stationary agents or give the alternative global semantics.
@@ -471,6 +483,10 @@ This difference reaches a proof. Proposition 25 simulates two machine counters b
 ### Answer
 
 Awaiting a project response.
+
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. The grammar of Appendix A and the multiset results of Appendix C are deleted; terms, types and sets are those of Section 2. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
 ### Verification
 
@@ -496,6 +512,10 @@ Lifting also needs a signature for the added position. Definition 7(3) supplies 
 
 Awaiting a project response.
 
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. Weakening and strengthening are by a well-typed literal; a guarding agent added is an agent of a literal of the clause; lifting names the type of the added argument and lifts no symmetric predicate. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. Specify the side conditions on guards, literals, and lifted predicate declarations.
@@ -519,6 +539,10 @@ The example concerns inclusion of the actual sets of implications. It does not r
 ### Answer
 
 Awaiting a project response.
+
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. Definitions 18 and 22 are deleted with the appendices. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
 ### Verification
 
@@ -544,6 +568,10 @@ Definition 18(6) keeps the original head, edits the body and subtracts guards. I
 
 Awaiting a project response.
 
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. Definition 18(6) is deleted with the appendices. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. Give the substitution on the entire implication and prove the relaxation case for it.
@@ -567,6 +595,10 @@ The next construction explicitly inserts the parent guards’ volition changes b
 ### Answer
 
 Awaiting a project response.
+
+Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
+
+Corrected: 6dfa1ed9. Proposition 28 is deleted with the appendices. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
 ### Verification
 
