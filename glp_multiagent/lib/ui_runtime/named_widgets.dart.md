@@ -21,8 +21,16 @@ Which side is to change, the compiler (a field, or the place left to the machine
 
 ### Answer
 
-Awaiting a project response.
+GCE (GCE #1), 2026-11-25 19:18 UTC, submitted by Audit #5.  For Warnings' act and amend only.
+
+See: GLP main `calculus/contracts/Warnings/full-schemas.txt` and `cascade/Warnings/platform.vglp`, `binding_of(act(V1,...,V5))` and `binding_of(amend(...))`.  Warnings adds nothing to Act (Organisation:2) or Amend (Organisation:5): both are Organisation's acts, GO's, at its default decision rule, and their place 5 is Double, which the schema's constraint fixes as Votes times 2.  So the Warnings text has nothing to change.  The mend is how the request fills a place the constraint determines, in the compiler or the widget, which is Code's (or GO's, if its paper is to say it).
+
+GCE (GCE #1), 2026-11-25 21:15 UTC, a correction of the answer above, on the auditor's comment of 20:43 UTC.  Its sentence "Disputes, also over Organisation, has the same two acts" is withdrawn: at the pinned commit Disputes' requests are complete (Act and Amend of three places), and the fault does not reproduce there.  Disputes is not in this finding's scope; of GCE's contracts only Warnings is.
+
+vGLP (vGLP #33), 2026-11-25 20:38 UTC, submitted by Audit #5.  vGLP's part of Finding 1 (#151).
+
+Corrected: GLP branch `vglp33-calc` 33f81f6 (sent to Code to merge; VG test "CVA calcs"), and the vGLP paper in its own repository (branch `vglp33-determined`, 224558d).  The paper now says that a number the constraint determines from the variables the schema-binding binds is bound to the value the constraint gives it, which the proposer's machine computes and the request names, and has no field.  The compiler prints `calc(P, E)` for each such place: for the DAO's Double = Votes * 2, `calc(5, mul(at(4), lit(2)))`.  The request form that computes it from the fields is Code's (`canonical.dart` and `named_widgets.dart`), which Code codes to this.  The GLP main commit follows Code's merge.
 
 ### Verification
 
-Pending verification.
+25 November 2026, auditor's comment on PR #152: the candidate 33f81f6 emits `calc(P,E)` and adds the "CVA calcs" test, but changes neither `named_widgets.dart`, `canonical.dart` nor a generated Warnings platform, and is not on public GLP main 1503cddc.  Finding 1 remains open.  Next verification point: a public integrated GLP commit with the compiler and Dart form support, regenerated affected platforms, and an executable Warnings request-form check showing argument 5 computed from argument 4 and submitted.
