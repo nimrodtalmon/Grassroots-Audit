@@ -213,6 +213,10 @@ Corrected: b17ca87, calculus/contracts/Tennis-Courts. Book now records the booki
 
 Checked: gcsas.py (through adopt.py) compiles; relations.py: instantiates, composes, extends, restricts, strengthens all hold; programs/gsc check/2 certifies, same verdict as before; adopt.py --check and --adopted-check pass. Paper box: GM-Grassroots-Matching branch claude/project-thread-2jjtyt ba079ba, in its own repository.
 
+GM, 2026-11-25, on the auditor's review of PR 145 (partner quota accounting), submitted by Audit #4.
+
+See: GLP calculus/contracts/Booking/full-schemas.txt, Booking:0, "Environment: ... x has fewer outstanding bookings in z than the bound". The bound is an environment state of Booking (GO's), for the one who books as for the partner; no contract built on Booking states the count. b17ca87 puts both records in the club's state, booked(Club,Court,Slot,Alice) and partnered(Club,Court,Slot,Carol), from which the count can be stated, and Tennis Courts' text says a booking counts for each. Stating it in the term needs a count of bookings, while the contract grammar counts only persons (calculus/tools/gcsas.py, COUNTW). GM has asked the Calculus (mail of 2026-11-25 18:36 UTC) to make it countable; that is a language question for Udi if it changes the grammar. GM will answer Corrected when the count is in the term.
+
 ### Verification
 
 25 November 2026: the replay extracts the unchanged Book and Cancel schema lines and confirms that both parties guard Book while only Alice appears in its effects. This is a state/meaning discrepancy, not a claimed runtime exploit of an unknown bound implementation. Closure: demonstrate accounting for both players under the chosen meaning, withdrawal and replacement.
