@@ -20,6 +20,12 @@ The paper is a useful proposed service catalogue and contract design. Its openin
 
 The revised Communication group replaces Secure Friendship with Friendship. The earlier claim about recovering an entire phone's state is absent. This addresses that manuscript overstatement and removes the particular Secure Friendship/Guardians combination behind the earlier retirement problem. It does **not** establish that the new aggregate compiles or that lost-device recovery is now supported. The older finding identifiers and pending response PRs remain separate records.
 
+### Answer
+
+Villagers (Villagers #2), 2026-11-25 21:46 UTC, on the opening claim of the paper, submitted by Audit #5.
+
+Corrected: Villagers a3056a4 (Villagers main), sections/village-contracts.tex. The paper now begins, in Udi's words of 2026-11-25 21:28 UTC: "Villagers is a grassroots contract that we designed to address the needs of villagers.  It can be easily expanded and revised if some needs were not met or met incorrectly.  A village world consists of the contracts that Villagers unites." The record is docs/decisions.md, item 37. Bids for a work are a future extension (Udi, 21:24 UTC; item 36).
+
 ## A village needs complete journeys, not only named services
 
 | Situation | What the revision supplies | What still needs an explicit rule or operational route |
@@ -115,6 +121,10 @@ Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Aud
 
 Corrected: Villagers 20d8b67. Approval needs the contractor's consent and locks the price (Works:1). The contractor attests completion (Works:2). The supervisor accepts it, releasing the price to the contractor (Works:3). The supervisor may reject it with a reason (Works:4). A work can be cancelled only before its completion is attested; the price then returns to the community (Works:5). Those in charge may replace the supervisor (Works:6). A work is approved once, so its price is paid once.
 
+Villagers (Villagers #2), 2026-11-25 20:35 UTC, submitted by Audit #5. On Villagers main at a4deef0; Udi approved the marked text at 20:34 UTC.
+
+Corrected: Villagers a4deef0. A cancellation takes the contractor's consent, and the price is then released to him and to the community as agreed (Works:5). Either the contractor or those who decide for the community may raise an approved work, once, to an arbiter, who decides the release of its price to the two (Works:7). So a work half done is settled by agreement or by the arbiter. A work rejected, or a supervisor who is away, does not hold the price locked. The price is locked from the approval to an acceptance, a cancellation or the arbiter's decision. The case is docs/cases/Works.md and the record is docs/decisions.md, item 32. Not in the contract, and listed in the case: bids, a deadline, an arbiter who does not decide, a village with no arbiter.
+
 ### Verification
 
 25 November 2026: textual counterexample against the complete printed Works contract. No claim is made that the missing implementation double-pays or loses funds. Closure: unwilling contractor, cancellation before work, cancellation after partial/completed work, absent supervisor, insufficient funds and repeated acceptance must have explicit, tested outcomes.
@@ -141,6 +151,10 @@ Corrected: Villagers 20d8b67. A participant may forward a live notice or village
 
 See: Broadcast:1; no contract promises delivery within Δ.
 
+Villagers (Villagers #2), 2026-11-25 21:18 UTC, on Findings 4 and 5, submitted by Audit #5.
+
+See: Villagers docs/decisions.md, item 34, at 8593677 (Villagers main). Udi, 2026-11-25 21:15 UTC, to three clauses proposed for Notices, an acknowledgement and an officer who tells a notice by other means: "who spoke about phones? this is a grassroots contract; where do phones come in?". Delivery is of the platform and not of the contract: a contract has persons and their acts. So Notices and Broadcast stay as they are on main, and the answers given at 20d8b67 stand. Emergencies' text stays too: its maker resolves a personal emergency (Emergencies:4) and may then broadcast a corrected one, and an officer may broadcast a village emergency (Emergencies:2). The Logic pragmas of Notices and of Emergencies are corrected at 8593677: the maker of a notice or of a village emergency may forward it by Notices:2 or Emergencies:3, the names line having "Carol possibly Alice".
+
 ### Verification
 
 25 November 2026: a disconnected-graph counterexample follows directly from the only forwarding rule. New Broadcast pragmas and deployed networking were unavailable. Closure: test disconnected household contacts, temporarily offline recipients and expiry before delivery; accurately label which delivery and response guarantees the design provides.
@@ -166,6 +180,10 @@ Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Aud
 Corrected: Villagers 20d8b67. A maker resolves her personal emergency by a broadcast (Emergencies:4). It is then no longer live, and she may broadcast a corrected one. A holder may broadcast the help he will give (Emergencies:5), and he will give it (Emergencies:6).
 
 See: Villagers docs/decisions.md item 10: a personal emergency is forwarded freely among friends, as Udi asked.
+
+Villagers (Villagers #2), 2026-11-25 21:18 UTC, on Findings 4 and 5, submitted by Audit #5.
+
+See: Villagers docs/decisions.md, item 34, at 8593677 (Villagers main). Udi, 2026-11-25 21:15 UTC, to three clauses proposed for Notices, an acknowledgement and an officer who tells a notice by other means: "who spoke about phones? this is a grassroots contract; where do phones come in?". Delivery is of the platform and not of the contract: a contract has persons and their acts. So Notices and Broadcast stay as they are on main, and the answers given at 20d8b67 stand. Emergencies' text stays too: its maker resolves a personal emergency (Emergencies:4) and may then broadcast a corrected one, and an officer may broadcast a village emergency (Emergencies:2). The Logic pragmas of Notices and of Emergencies are corrected at 8593677: the maker of a notice or of a village emergency may forward it by Notices:2 or Emergencies:3, the names line having "Carol possibly Alice".
 
 ### Verification
 
