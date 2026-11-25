@@ -59,7 +59,9 @@ Severity: high · [Issue 130](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+Corrected: Villagers 3adaa3b. A visit is booked and cancelled with the consent of its recipient (Care:1, Care:2). The visitor will visit (Care:3). The recipient attests the visit (Care:4). The resource is the care of a participant who needs it.
 
 ### Verification
 
@@ -77,7 +79,9 @@ Severity: high · [Issue 131](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+Corrected: Villagers 3adaa3b. A tool has a keeper. A participant collects it at her slot and returns it, each with the keeper's consent (Tools:2, Tools:3). She will return it on time and in the same condition (Tools:4). The keeper attests it out of use and in use again (Tools:5). A tool out of use cannot be booked (Tools:1). The keeper will tell those who booked it (Tools:6).
 
 ### Verification
 
@@ -95,7 +99,9 @@ Severity: high · [Issue 132](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+Corrected: Villagers 3adaa3b. Approval needs the contractor's consent and locks the price (Works:1). The contractor attests completion (Works:2). The supervisor accepts it, releasing the price to the contractor (Works:3). The supervisor may reject it with a reason (Works:4). A work can be cancelled only before its completion is attested; the price then returns to the community (Works:5). Those in charge may replace the supervisor (Works:6). A work is approved once, so its price is paid once.
 
 ### Verification
 
@@ -113,7 +119,9 @@ Severity: high · [Issue 133](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+Corrected: Villagers 3adaa3b. A participant may forward a live notice or village emergency of the organisation to any participant (Notices:2, Emergencies:3). It thus reaches every participant connected to the village, also beyond friends. See: Broadcast:1; no contract promises delivery within Δ.
 
 ### Verification
 
@@ -131,7 +139,9 @@ Severity: high · [Issue 134](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+Corrected: Villagers 3adaa3b. A maker resolves her personal emergency by a broadcast (Emergencies:4). It is then no longer live, and she may broadcast a corrected one. A holder may broadcast the help he will give (Emergencies:5), and he will give it (Emergencies:6). See: Villagers docs/decisions.md item 10: a personal emergency is forwarded freely among friends, as Udi asked.
 
 ### Verification
 
@@ -167,7 +177,9 @@ Severity: medium · [Issue 136](https://github.com/udi-shapiro/Grassroots-Audit/
 
 ### Answer
 
-Awaiting a project response.
+Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
+
+See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 3adaa3b. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
 
 ### Verification
 
