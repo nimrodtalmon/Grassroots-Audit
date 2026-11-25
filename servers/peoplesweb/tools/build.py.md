@@ -28,7 +28,9 @@ The corresponding `calculus/contracts/` and `cascade/` inputs have identical Git
 
 ### Answer
 
-Awaiting a project response.
+Website, 2026-11-25, relayed by the coordinator, submitted by Audit #4.
+
+Corrected: [GLP b579ce0d](https://github.com/EShapiro2/GLP/commit/b579ce0d5973082f26e759529202c9c5931fb8bf) (GLP PR 162), on GLP main. build.py now reads acts with several labels joined by "+"; checked live: Tennis Courts 58/58 (Book shown as "Booking + Tennis Courts"), Booking 31/31, Disputes 31/31; every adopted contract's act count matches its full-schemas.txt.
 
 ### Verification
 
