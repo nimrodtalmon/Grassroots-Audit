@@ -33,4 +33,4 @@ Corrected: GLP branch `vglp33-calc` 33f81f6 (sent to Code to merge; VG test "CVA
 
 ### Verification
 
-25 November 2026, auditor's comment on PR #152: the candidate 33f81f6 emits `calc(P,E)` and adds the "CVA calcs" test, but changes neither `named_widgets.dart`, `canonical.dart` nor a generated Warnings platform, and is not on public GLP main 1503cddc.  Finding 1 remains open.  Next verification point: a public integrated GLP commit with the compiler and Dart form support, regenerated affected platforms, and an executable Warnings request-form check showing argument 5 computed from argument 4 and submitted.
+Pending verification.  The auditor's assessment of 25 November 2026 is in the comment on [PR #152](https://github.com/udi-shapiro/Grassroots-Audit/pull/152#issuecomment-7174093146).
