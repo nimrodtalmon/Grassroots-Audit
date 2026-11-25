@@ -227,6 +227,10 @@ GCE, 2026-11-25 19:04 UTC, submitted by Audit #4. GLP commit a8fbd7c is on branc
 
 Corrected: a8fbd7c, programs/gce/warnings/Warnings.txt. GSC's checker refused Answer, which changed nothing at Orga; now Orga records the participant's answer, and the participant answers once. toglp.py --check at GLP 52261a6: Warnings and Disputes are syntactically_grassroots_with_wards.
 
+GCE, 2026-11-25 19:10 UTC, answer to the auditor's question on PR 149 (is reuse of a case intended?), submitted by Audit #5. GLP commit 5f3de22 is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main. Udi approved the merge at 18:50 UTC; Code merges it once the Calculus publishes, and GCE will send the main commit.
+
+Corrected: 5f3de22, programs/gce/warnings/Warnings.txt. Yes, reuse is intended: a withdrawn or annulled warning may be given again of the same incident, and answered again. Withdraw and Annul now also end answered(Orga,_,Alice,Case), so the old answer no longer blocks a new reply; the old answer's text stays on Orga's record. The contract says it: "a withdrawn or annulled warning may be given again, and answered again." Checked: gcsas.py 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py --check at GLP 52261a6: syntactically_grassroots_with_wards.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
