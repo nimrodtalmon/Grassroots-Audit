@@ -1,6 +1,135 @@
 # Grassroots contracts and their relations
 
-Date: 2026-11-24
+Date: 2026-11-25
+
+## Review of the fifteen-page Calculus and GSC subsumption, 25 November 2026
+
+Project: Calculus, with GSC  
+Auditor: ChatGPT/Codex, Grassroots Review  
+Review date: 2026-11-25
+
+**Sources.** The author supplied *Calculus__Grassroots_Contracts_Calculus (11).pdf* (15 pages, 547,213 bytes) and *GSC__Grassroots_Social_Contracts (19).pdf* (73 pages, 2,133,059 bytes), uploaded together on 25 November 2026 at 22:54 UTC. Both were read at their supplied version 0. These are the versions reviewed, not the older PDFs identified elsewhere in this report and not an assumed current arXiv version. No claim is made that these exact PDFs match a GLP commit. Calculus is not listed as a published PDF in the inspected GLP paper registry, so this review continues its existing report here.
+
+**Coverage.** Read all of Calculus, including Appendix A. Compared GSC's contract language, definitions and results in Sections 2–10 and Appendices A–C, including its proof dependencies. GSC's legal history, literature survey, deployment claims and implementation correctness are outside this review. Read text extracted from both supplied PDFs; page images were unavailable, so this is not a visual/typesetting audit. Ran the six small mathematical controls in [calculus-math-controls-2026-11-25.py](calculus-math-controls-2026-11-25.py). They check the explicit examples below, not the GLP compiler, the 91-contract experiment or a machine-checked proof of either paper.
+
+### Assessment
+
+**Calculus is a plausible replacement foundation, but it does not yet establish the requested subsumption.** This is not a claim that its smaller language lacks the expressive power to represent GSC. Typed terms, collections and local tests could encode much of GSC, including multisets. The missing step is a specified translation and preservation argument, and some results require altered hypotheses under set semantics.
+
+The new version makes substantial progress over the five-page version: it now defines Formal English, gives both maps, states and proves the correspondence and commutation propositions, and supplies a grassroots theorem with a proof. The scalar, free-constructor fragment has a coherent proof strategy: forced changes identify unguarded participants; provenance establishes containment; the recording graph establishes closure; a dedicated meeting record makes introduction a new state change.
+
+Three concrete problems remain in the printed definitions:
+
+1. Proposition 9's exact inverse law fails when an act explicitly repeats the precondition of a deletion.
+2. Definition 10's one-literal augmentations cannot perform every valid simultaneous augmentation admitted by a Formal English citation; this leaves Proposition 15 false on its stated domain.
+3. Allowing equations for abstract data types, while defining provenance and graph edges by syntactic occurrence, invalidates the support reasoning in Appendix A. Set difference already supplies a counterexample.
+
+The collection-participant concern below is different: it exposes an unspecified elaboration/validation order. It should not be represented as an unconditional counterexample if the intended checks are performed after expansion.
+
+### Correspondence with GSC
+
+“Partial” means that a related definition or proof exists, but the original domain or conclusion has not been recovered. “Absent” does not mean unexpressible.
+
+| GSC material | Calculus counterpart | Assessment |
+| --- | --- | --- |
+| Section 2: readable clauses, declarations and derived contracts | Sections 2 and 4 | The new Formal English and five operations improve the formal account. The old extends/restricts/strengthens/relaxes/instantiates/composes surface language is replaced; give a migration rule if old contracts remain in scope. |
+| Definitions 1–3: multisets, safe formulas, conditional effects, listed roles and clearing | Definitions 1–4; collection convention in Section 3.1 | Partial. Set states are explicit; the full GSC syntax and its elaboration are not. |
+| Proposition 4 and Appendix B.2: two-counter-machine encoding | No stated counterpart | Not subsumed as a result. Sets can encode counters with numeric or structured terms; the old multiplicity proof does not transfer literally. |
+| Definition 5: admissible bindings, signatures, permitted coincident roles | Definition 3 | Coincident roles are now permitted. The signature/admissibility condition and GSC's extra restriction on identified roles are not reproduced. |
+| Definitions 6–7: exact participant extents and denotation | Definitions 3–4 | Partial. Collection expansion needs an exact state-dependent extent rule, including empty extents, simultaneous updates and validation. |
+| Definition 8: records | Section 5, ag and rec | Changed. GSC records the outer signer of a speech act; ordinary recursive occurrence in a compound term also sees nested signers. This affects S(P). |
+| Definitions 9–10: introductory and unobstructed acts | Definition 17 | A useful new sufficient condition, but a narrower one: the body must be exactly two person atoms and the meeting predicates must be exclusive to that clause. GSC permits preparatory unary acts and a more general introduction. |
+| Definition 11: traceable provenance | Definition 18(2), Lemma 21 | Related argument, with the ADT-support fault in Finding 25. GSC's tracing through safe formulas and admissible fresh signed data also needs a translation. |
+| Definitions 12–13: signature atoms, reading roles, volition | Clause condition on D(C), Definition 18(3) | Deliberate restriction for unguarded acts: every participant must change state. GSC's signature-atom alternative permits stationary readers. Adding a delivery record can repair an example, but changes its state and requires a preservation argument. |
+| Definition 14 and Theorem 15: syntactically grassroots; grassroots and volitionally grassroots realisation | Definition 18 and Theorem 19 | The target changes to grassroots for persons. It does not imply the old conclusions for arbitrary agents or active wards. |
+| Definition 16 and Lemma 17: realisation and well-formed transaction classes | Lemma 5 and Definition 6 | Good scalar replacement strategy. Collection expansion and the carrier of transaction equivalence must be made explicit. |
+| Lemma 18: containment | Lemma 21 | Direct counterpart, subject to the support correction. |
+| Proposition 19: every affected agent takes a role | Definition 4 and imported transaction closure | Available as a short corollary: only participants' states change. State it if replacing GSC's mathematical claims. |
+| Proposition 20 and Corollary 21: anonymity and no privileged agent | Proposition 20 | Conditional counterpart. Calculus assumes invariance of constraints/tests under the permutation; GSC states invariance for every permutation. To conclude full anonymity, require that hypothesis for every permutation, also for the datatype interpretation. |
+| Definitions 22–25 and Theorem 26: semantic recording, mutual recording, openness, closure, politeness and the general Polite theorem | Parts of Section 5 and Appendix A | The specialised proof reuses the ideas, but no theorem for arbitrary contained polite transaction sets is stated. Such a general theorem is not a corollary of a theorem only about generated contracts without a representation theorem. |
+| Lemma 27; Propositions 28–29; Lemma 74 | Lemmas 21–23 and proof of Theorem 19 | Corresponding containment/recording/closure/introduction proof structure, on the new domain and subject to the identified faults. |
+| Lemma 30: reflexive predicates | Definition 4 and Appendix A | Substantially carried over for scalar predicates, with the implicit diagonal distinguished from stored atoms. |
+| Definitions 31–35; Theorem 36; Proposition 37; Lemmas 75–76; Definition 77; Proposition 78; Theorem 79 | No counterpart for types, guardianship, relay, leaving and active wards | Not subsumed by the persons-only theorem. These are additional mathematical guarantees, not just application examples. |
+| Definitions 38–41: legal modalities, witnessing and temporal undertaking formulas | Explicitly set aside in Section 2.2 | If “all contract mathematics” includes these, they must remain in GSC or be transferred. A machine-correct run and a run keeping a person's undertaking are different notions. |
+| Propositions 42–43: witnessing and enforcement by guarding | No stated counterpart | Guarding can support a replacement consent result. Witnessing needs freshness under sets: adding an already-held record need not leave new evidence. See Finding 27. |
+| Definition 44 and Proposition 45: presenting runs and another participant holding the undertaking | No counterpart | A short independent result that can be retained or transferred; the current calculus does neither. |
+| Appendix A, Definitions 46–70 and imported VMAT results | Citation [11] and selected recollections | These belong to VMAT and need not be re-proved in Calculus. Precise versioned references and an explicit interface suffice. |
+| Lemmas 71–72 and Definition 73: changed states, mutual recording, restricted recording graph | Related arguments in Appendix A | Changed-state arguments are adapted; the general lemmas and the environment/non-environment graph distinction are not all retained. |
+| Definitions 80–81 and Appendix C: constraints, sums, counting, signed values, environment updates | Typed terms, ADTs and local tests, Sections 3.1–3.2 and 6.3 | Potentially representable, not a defined semantics-preserving elaboration. Time/place updates are missing from the transition relation (Finding 29). |
+
+GSC's decidability claim also needs an explicit disposition. Calculus's Definition 17(3) universally quantifies preservation of arbitrary semantic constraints by every introductory instance. Decidability of checking a constraint on one finite state does not imply decidability of that universal preservation property. The three catalogue checks in Section 6 do not check this obligation.
+
+### The exact English inverse needs normalization — follow-up to Finding 10
+
+Calculus Definition 7, pp. 6–7, adds a positive body atom for every deletion and, on decoding, removes that atom from the explicit conditions. Let the vocabulary contain the state “Alice holds a token.” Compare the following two already-expanded acts, with the same name and guard:
+
+- “Drop: Alice may no longer Alice holds a token.”
+- “Drop: Alice may no longer Alice holds a token, provided Alice holds a token.”
+
+Their full texts differ under Section 2.2. Both map to the same clause:
+
+```text
+not Alice:token <- Alice:token guarded by Alice.
+```
+
+Decoding either yields the first act. Therefore epsilon(lambda(T)) is not always the full text of T, and equal translations need not imply the stated textual equivalence. Treating lists as sets does not fix this: it removes repetitions within a list, not a condition implied by a deletion in another list.
+
+**Repair.** Define an explicit normal form that omits deletion-implied positive conditions; require normalized full texts or state epsilon(lambda(T)) = normal_form(T). Define equivalence accordingly. Also make the source grammar cover the constants, compound terms, tests and collection constructs in the claimed target domain, or restrict the inverse theorem to the displayed source fragment.
+
+The defect is a repairable mismatch in the equality claimed, not evidence that translation is impossible.
+
+### Simultaneous English augmentation is not generated by the logical operations — follow-up to Finding 14
+
+Take an unguarded parent clause, with ordinary nonsymmetric predicates:
+
+```text
+A:p <- A:knows(B), not A:p.
+```
+
+It has one participating holder, A. A citation adds condition “not B:q” and effect “B:q”, giving:
+
+```text
+A:p, B:q <- A:knows(B), not A:p, not B:q.
+```
+
+The result is a clause: both participants are forced to change, and its graph is connected by the knows condition. It can sit alongside the same establishing and introductory clauses in both contracts.
+
+But Definition 10(2), p. 7, adds one literal at a time and requires each result to be a clause. Adding the B effect first produces a two-participant unguarded implication without a forced change at B. Adding the B condition first does the same. Both intermediate results are forbidden. Adding a guard cannot help, because the desired result is unguarded and no operation removes guards. Adding the desired clause separately retains the original, which the citation replaces.
+
+Thus Proposition 15, pp. 8–9, does not follow on its stated domain from those operations. **Repair:** make augmentation simultaneous on finite additions to body, head and guards, validating the final clause. Then specify the coupled body addition required by a deletion effect and re-prove the citation case.
+
+Proposition 12's distributivity proof also needs a domain convention. If the clause to augment occurs in X but not Y, augmenting X union Y is defined, while applying that partial operation to Y is not. A localized operation acting as identity when its target is absent, with explicit clause identities and handling of shared clauses, can repair the proof; the present one-line argument does not supply it.
+
+### What the experiment does and does not establish
+
+Section 6 reports 91 successful checks, with 63 exact returns and 28 returns having the same clauses, and 71 exact recoveries and 20 equivalent recoveries. Those results are compatible with a normal-form theorem. They do not establish Proposition 9's stronger equality of full texts.
+
+Recover also takes citations and the first line as inputs. That is recovery with retained structure, not recovery of a unique inheritance history from flat implications alone. Section 6.3 explicitly says that the implemented language has constructs not presented in Sections 2–3. It needs an elaboration theorem, not merely a list of constructs.
+
+A reproducible account should name the implementation commit, command, input manifest and equality/normalization used, distinguish ordinary union from any rule merger, and state which typed language the checks cover. This review did not rerun the 91 checks and makes no claim that their reported outcomes are false.
+
+### Disposition of earlier paper findings
+
+| Earlier finding | Supplied Calculus (11) |
+| --- | --- |
+| 10 / #84 | New proofs are now present; the previous “no proof” criticism is superseded. The inverse and commutation problems above remain open. |
+| 14 / #88 | The earlier guard-occurrence, typing, symmetric-lift and reflexive-lift objections are corrected. The new augmentation-domain problem above remains open. |
+| 21 / #98 | The printed distinctness defect is corrected: Definition 3 permits declared coincident agents, computes participants after grounding, and Definition 4 rejects conflicting updates. |
+| 22 / #99 | The empty-state Acquaint example is corrected: its body and worked states now contain person. This does not certify alignment with every current catalogue/implementation atom. |
+| 23 / #100 | Corrected: p. 5 explicitly requires the empty local state to satisfy the semantic constraints. The separate clock-update issue below is not the old unrestricted-constraint objection. |
+| 24 / #101 | The claimed general run-inclusion result is withdrawn. The remaining related-work analogy should not be read as a theorem about fair/correct runs. |
+
+### Recommended mathematical completion
+
+1. Fix the three concrete correspondence/support defects before relying on the main claims.
+2. Give one typed elaboration for compound terms, collections, tests and quantified/clearing constructs. Define finite support modulo datatype equality, exact participant extents, empty collections and transaction classes.
+3. Decide the intended migration relation from GSC. If GSC's state language is retired, say which observations survive; if it is supported as a source language, give the translation. In either case preserve the relevant participants, guards and liveness classes as well as visible state changes.
+4. State the additional hypotheses that recover ordinary grassrootsness and interactivity of active wards. Preserve the general Polite theorem if it is meant to move out of GSC.
+5. Give revised statements for witnessing, undertakings and signature provenance, or explicitly retain that mathematical layer in GSC. Do not port the multiset witnessing proof unchanged.
+6. Demonstrate the bridge on group closing, unfriending with zero/many memberships, guarded and unguarded readers, a fresh signed item, two equal-denomination notes, an active ward and a counter zero-test after two increments.
+
+A narrow, defensible claim now would be that Calculus proposes a new typed set-based foundation and sufficient conditions for grassroots interaction among persons. Claiming that it already subsumes all of GSC's contract-language mathematics is premature.
+
 
 ## Review of the five-page revision, 24 November 2026
 
@@ -499,6 +628,8 @@ Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved 
 
 **Auditor, 24 November 2026, catalogue and response verification.** **Open in the five-page revision.** The appendices and old proof are gone, while the abstract still asserts mutual determination and commutation. §§2–3 define the logical objects and operations. The five pages supply neither formal-English translation/inverse nor a theorem or proof for these operations. The reply says the proofs will be given. Provide the maps, their domains and equivalences, and proofs, or change the abstract to the result presently supported.
 
+25 November 2026, supplied Calculus (11), 15 pages. **The prior absence of proofs is superseded. The correspondence claim remains open.** Sections 2–4 now define both translations and prove Propositions 9 and 15. The exact inverse nevertheless removes an explicitly stated precondition of deletion, as shown in the new review above. Proposition 15 also uses a simultaneous augmentation that Definition 10 cannot always decompose into valid one-literal steps (Finding 14 follow-up). The six mathematical controls are preserved in calculus/calculus-math-controls-2026-11-25.py. No catalogue experiment was rerun.
+
 ## Finding 11. The empty initial state violates the stated reflexivity constraint
 
 Severity: high
@@ -618,6 +749,8 @@ Corrected: 6dfa1ed9. Weakening and strengthening are by a well-typed literal; a 
 24 November 2026. Checked against the supplied manuscript identified above. Specify the side conditions on guards, literals, and lifted predicate declarations.
 
 **Auditor, 24 November 2026, catalogue and response verification.** **Partly verified; open in the five-page revision.** Definition 6 now types added literals and confines a new guard to an agent already occurring in the clause. Definition 7(3) types the fresh lift position and excludes symmetric predicates. It still admits a reflexive, nonsymmetric predicate. Lifting agent-local p(Agent) to p(Agent,T) leaves Definition 4’s implicit unary p(a) ill-typed. Exclude reflexive predicates from lifting or define a typed parameter-indexed diagonal and its semantics.
+
+25 November 2026, supplied Calculus (11), Definition 10. **The original guard, typing and lifting objections are corrected; the domain problem remains open in a new form.** Both symmetric and reflexive predicates are now excluded from lifting. But the valid two-holder augmentation in the review above cannot be performed by either order of the two allowed one-literal additions; each intermediate implication violates the clause condition. Permit simultaneous augmentation or restrict the English citation domain, then re-prove Proposition 15. Proposition 12 also needs a convention for applying a targeted partial operation to a union component without that target.
 
 ## Finding 15. Removing redundant implications can delete an inherited clause during extension
 
@@ -835,6 +968,8 @@ Awaiting a project response.
 
 Exhibit the elaboration or amended binding rule and replay a permitted coincident-role instance.
 
+25 November 2026, supplied Calculus (11), Definitions 3–4, p. 6. **Correction verified for this paper finding.** Definition 3 now expressly permits declared agent identifications; participants are the agents of the grounded literals, and Definition 4 combines their sets of effects and rejects a positive/negative conflict. The earlier prohibition of every identification is removed. This is not verification of every catalogue instantiation.
+
 ## Finding 22. The Knowledge Acquaint example permits a transaction its catalogue clause rejects
 
 Severity: medium
@@ -857,6 +992,8 @@ Awaiting a project response.
 
 Compare the enabledness of the revised example with the catalogue on empty and established-person states.
 
+25 November 2026, supplied Calculus (11), p. 6. **The empty-state example is corrected; exact catalogue alignment remains unverified in this review.** Acquaint's body now requires person at both agents and its worked states contain person. The current catalogue/checker was not rerun or compared atom for atom; the issue is retained for that remaining boundary.
+
 ## Finding 23. The allowed local constraints can exclude the designated initial state
 
 Severity: high
@@ -877,6 +1014,8 @@ Awaiting a project response.
 
 Show that the designated initial state belongs to every admitted state space.
 
+25 November 2026, supplied Calculus (11), p. 5. **Correction verified.** Immediately after Definition 2 the paper explicitly requires the semantic constraints to be satisfied by the empty local state. The ready(1) counterexample is therefore excluded. Environmental initialization and updates are a different question, recorded in Finding 29.
+
 ## Finding 24. Section 4 needs to specify which runs weakening preserves
 
 Severity: medium
@@ -896,3 +1035,169 @@ Awaiting a project response.
 ### Verification
 
 State the run observation and progress condition and check the one-state example under them.
+
+25 November 2026, supplied Calculus (11), Sections 4 and 7. **Resolved by withdrawal of the claimed general run-inclusion result.** Section 4 gives syntactic operations and inheritance. The related-work paragraph compares restrictions to refinement but states no theorem asserting inclusion of correct runs. Such a theorem would still require a specified observation and treatment of liveness if restored.
+
+## Finding 25. Datatype equality does not preserve the agent occurrences used by the grassroots proof
+
+Ticket: [#166](https://github.com/udi-shapiro/Grassroots-Audit/issues/166)
+
+Severity: high
+
+Project: Calculus, with GSC
+
+**Calculus Sections 3.1–3.2 and 5; Lemmas 21–23 and Theorem 19, pp. 5–6, 9–10 and 13–15.**
+
+The language admits Set(Agent), difference and the equations of sets, and identifies ground atoms whose arguments are equal. But ag, Provenance and Gamma are defined using syntactic occurrence. In particular:
+
+```text
+{B} minus {B} = empty.
+bag({B} minus {B}) = bag(empty).
+```
+
+Declare bag to take a set as its argument; this is not the shorthand that distributes a collection over an argument expecting a single agent.
+
+A unary clause
+
+```text
+A:knows(B) <- A:bag({B} minus {B}) guarded by A.
+```
+
+passes the printed Provenance condition: B occurs in a positive body literal. From the local state {bag(empty)} at a, its instance B=b adds knows(b). If b is outside P={a}, the source belongs to S(P) and the target does not. This contradicts Lemma 21 under the ordinary extensional meaning of the set argument.
+
+There is also a direct counterexample to Theorem 19. Take no semantic constraints, include the unary establishing clause, the ordinary introductory clause with an exclusive predicate met, a unary clause that lets A add bag(empty), and:
+
+```text
+A:u, B:v <- A:bag({B} minus {B}), not A:u, not B:v.
+```
+
+This unguarded clause forces both participants to change. Its printed graph is connected: B occurs in A's positive body atom. Its positive head has no agent argument needing further provenance. Thus, together with the introduction, the contract satisfies Definition 18 as printed.
+
+Let a prepare bag(empty) alone while b remains empty. They have not interacted. The displayed clause is enabled for A=a, B=b, since the set expression equals empty. It changes both states; neither singleton protocol can produce its corresponding u or v change. It is therefore their first interaction and has no guards, contradicting Definition 16(3). Equivalently, terminal correct singleton runs can have an interleaving with this new unguarded obligation, defeating obliviousness.
+
+One cannot instead count every syntactically occurring b in an arbitrary representation of bag(empty): equality would then make recording depend on the chosen representative, or give an empty set infinitely many spurious recorded agents.
+
+**Required correction.** Define a finite agent-support function on semantic values, invariant under datatype equality. Require provenance witnesses and graph edges to certify actual support after evaluation. A simpler restriction is constructor-only data patterns, with destructors such as set difference confined to an explicitly checked expression/test language. Prove the substitution/support lemma actually used in Lemmas 21–23. Merely requiring datatype operations to commute with permutations is insufficient: set difference already does.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+25 November 2026. The ADT_SUPPORT and CROSS_ENABLEDNESS controls independently check the finite set equalities, enabledness and changes. The full theorem counterexample above is a mathematical argument, not a GLP implementation test. Finding open.
+
+## Finding 26. Collection participants need a defined expansion and validation rule
+
+Ticket: [#167](https://github.com/udi-shapiro/Grassroots-Audit/issues/167)
+
+Severity: high
+
+Project: Calculus, with GSC
+
+**Calculus Section 3.1, Definitions 3–6 and Appendix A, pp. 5–6 and 12–13.**
+
+A collection may replace an agent or guard and stands for its elements. The ground-instance and proof notation otherwise treats g(y) as one agent. The paper does not define when the collection is expanded relative to clause well-formedness, participant construction, D(C), Gamma or transaction equivalence.
+
+This matters to Lemma 5. Under the reading that a single collection holder counts as one syntactic holder for the clause check, consider the unguarded implication U:flag <- U:ready. Expand U={a,b}, with a holding ready and b already holding ready and flag. Only a changes. Its transaction has the same transition in its {a,b}-closure as the U={a} instance with b stationary, although the participants differ. They cannot be identified by a transaction equivalence that preserves participants.
+
+**This is conditional on the pre-expansion reading.** If the intended rule checks the expanded implication and rejects the two-agent instance, the example is rejected and is not a counterexample to that completed semantics. The paper must state that rule and adapt Lemma 5 accordingly.
+
+For GSC subsumption a further condition is essential: a collection representing a listed role must be the entire extent read from its anchor, not an arbitrary chosen subset. Otherwise closing a group could leave out a listed member. GSC Definitions 6–7 expressly supply this condition. Multiple collections also need correlation/Cartesian-product rules, overlap handling, and finite extents.
+
+The appendix additionally assumes a collection in an agent or guard position has at least one element. GSC permits an empty listed extent; a partial guard role cannot by itself certify a nonempty guard in a graph component. State which empty collections are legal and how they disappear, without disabling an otherwise valid act.
+
+**Required correction.** Define a typed, state-dependent finite elaboration, followed by the appropriate checks on the resulting holders, effects and guards. Prove preservation of the properties used by Lemmas 5, 21–23 and Theorem 19, or explicitly restrict their scope.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+25 November 2026. COLLECTION_CONDITIONAL checks the overlap example under the reading identified above. No claim is made that a compiler using a different, documented validation order accepts it. Finding open.
+
+## Finding 27. The change from GSC multisets to sets lacks a preservation theorem
+
+Ticket: [#168](https://github.com/udi-shapiro/Grassroots-Audit/issues/168)
+
+Severity: high
+
+Project: Calculus, with GSC
+
+**GSC Definitions 1–7, Proposition 4, Section 3.6, Propositions 42–43 and Appendix C; Calculus Definitions 2–4 and Section 6.3.**
+
+The new language may encode the old one, but literal erasure of multiplicity is not that encoding. One and two copies of note(q) become the same set. A second production of an existing atom becomes idempotent, and a transaction whose entire effect is such a production disappears by Calculus's requirement c' != c. Both effects and potential interaction/liveness events can therefore change.
+
+Witnessing supplies a particularly small proof obligation. GSC Proposition 42 concludes that a schema is witnessed against each agent role it names at another role. In its multiset semantics, production creates another occurrence. In the set semantics, let A already hold record(B), and take a clause that adds record(B) and a new flag at A, with B participating and both guarding. The act changes the flag but leaves no new record naming B. The literal set analogue of Proposition 42 is false, even though the head names B at A. Requiring record(B) to be absent, or recording an act with a fresh identifier, would repair this example.
+
+There are other semantic choices to preserve or deliberately change:
+
+- GSC's fresh signed-data binding rule restricts who can originate a speech act. An unconstrained compound constructor does not impose this rule.
+- GSC records only the outer signer of a speech act. Representing nested signatures as ordinary compound terms under Calculus's recursive occurrence convention changes which agents a local state records and potentially which S(P) contains it.
+- GSC's fresh community names, anchored formulas, clearing effects and exact role extents need an elaboration, including the zero-match case. A deletion that requires its atom is not by itself “clear all matching atoms, possibly none.”
+- GSC's Turing-completeness result has an explicit multiset-counter proof. Numeric counters or a multiset ADT in Calculus may recover it; that proof has not been supplied.
+- A set of individually identified notes is a reasonable new model, but it distinguishes choices that the old fungible multiset did not. State the abstraction map and its observational boundary.
+
+**Required correction.** Specify either a semantics-preserving translation of the supported GSC language, or a deliberate replacement semantics with a theorem stating precisely what survives. Include participants, guards, transaction-equivalence classes and correct runs in the preservation claim; matching a few final stores is insufficient. Re-prove witnessing under set-specific freshness assumptions.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+25 November 2026. WITNESSING checks the difference between multiset production and idempotent set insertion. The absence of an encoding is a coverage gap, not a proof of inexpressibility. Finding open.
+
+## Finding 28. Grassroots for persons does not subsume GSC's general and ward theorems
+
+Ticket: [#169](https://github.com/udi-shapiro/Grassroots-Audit/issues/169)
+
+Severity: high
+
+Project: Calculus, with GSC
+
+**Calculus Definitions 16–19, pp. 9–10; GSC Theorems 15, 26, 36 and 79, Proposition 37, and Definitions 31–35 and 68–70.**
+
+Calculus requires the extension to an interaction only when both selected sets already contain a person. GSC's ordinary theorem covers any selected sets, and its volitional theorem covers agents that have not left. An agent can remain capable of taking acts without holding person. Therefore the persons-only hypothesis cannot replace “has not left.”
+
+A separating construction uses an introductory clause requiring person at both participants, but provides no way to obtain person. Give every agent guarded unary flag-toggle acts. Definition 18's introduction exists syntactically, provenance is trivial and every unary graph is connected. The agents can remain active, yet no two can interact; the persons-only interaction requirement is vacuous. Thus even a repaired proof of Theorem 19 does not imply GSC's ordinary or volitional grassrootsness. This is a difference in theorem strength, not a counterexample to the persons-only definition itself.
+
+If vacuity is ruled out by additionally requiring an identity-establishing clause, active nonperson agents still need a bridge: a proof that they can become persons or interact through their guardians. GSC supplies type/guardianship invariants, relay acts and a leaving argument. Calculus does not give counterparts.
+
+GSC's general Polite theorem is another independent result: it applies to arbitrary contained transaction sets meeting semantic openness and closure conditions, not just those represented by the current clause language. The specialised contract theorem does not subsume it without a representation argument.
+
+**Required correction.** Retain “for persons” in the abstract and statement of coverage; add the conditions and corollaries recovering ordinary grassrootsness and active-ward interactivity, or explicitly retain those results in GSC. Transfer the general Polite theorem if all of GSC's foundational mathematics is to move. The definitions and results on modalities, witnessing, undertakings and presenting runs also need an explicit retained/transferred scope, as listed in the comparison table.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+25 November 2026. Checked the quantifiers and predicates of both definitions and the separating construction above. Finding open.
+
+## Finding 29. Time and place have no transition rule in the defined protocol
+
+Ticket: [#170](https://github.com/udi-shapiro/Grassroots-Audit/issues/170)
+
+Severity: medium
+
+Project: Calculus, with GSC
+
+**Calculus Section 3.2 and Definitions 2, 4 and 6, pp. 5–6; GSC Appendix C, p. 68.**
+
+Calculus specifies an empty stored initial state, assumes that every local state has its time and place, prohibits clauses from writing them, and defines the protocol from clause-induced transactions and volition changes. It supplies no step that initializes or updates the environmental information. If represented by stored atoms, those atoms cannot arise from the empty state or advance through the specified steps. If represented outside the stored state, the state/test interpretation and update semantics must say so.
+
+GSC Appendix C explicitly introduces environmental initialization and unary platform updates, and states which such records may contribute to provenance and the role graph. That is mathematical machinery, not merely an implementation detail.
+
+**Required correction.** Define environment fields or atoms, their initial values and local updates, their relationship to semantic constraints and tests, and their treatment by liveness and the grassroots proof. A counterexample control should advance the date while the contract performs no act, then enable a date-dependent act. State any environmental assumptions separately from the guarantees of the contract.
+
+### Answer
+
+Awaiting a project response.
+
+### Verification
+
+25 November 2026. Read the complete transition definition and the two treatments of the environment. No timed implementation was executed. Finding open.
+
