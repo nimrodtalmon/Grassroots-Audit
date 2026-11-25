@@ -191,6 +191,10 @@ Corrected: ab9002a, programs/gce/warnings/Warnings.txt, Villagers #2's text take
 
 Checked as for Finding 6.
 
+GCE, 2026-11-25, on the auditor's review of PR 145, submitted by Audit #4. GLP commit bbf4f7e is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: bbf4f7e, programs/gce/warnings/Warnings.txt. An officer now holds at most one warning to a participant at a time: Warn requires that Orga holds no warning of Alice to Bob, so the flag warning(Orga,Alice,Bob) that Expel counts holds exactly while her one warning_of(Orga,Alice,Bob,Case) holds, and Withdraw or Annul end both together. No other incident of hers can be left uncounted, since there is none. Checked at GLP 9d0952c: gcsas.py commute, return, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
