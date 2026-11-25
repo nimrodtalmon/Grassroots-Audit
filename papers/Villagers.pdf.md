@@ -159,7 +159,11 @@ Severity: high · [Issue 135](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+GCE, 2026-11-25, submitted by Audit #4. GLP commit ab9002a is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: ab9002a, programs/gce/disputes/Disputes.txt. A dispute is raised once, to one arbiter, and has one ruling, which both parties receive. Raise requires and adds dispute(Orga,Issue), kept after the ruling, so a second Raise of the same dispute (another arbiter, the parties in the other order, or after the ruling) is refused; the witness stops at Raise Dave. Decide adds ruling(Alice,Orga,Issue,Ruling) and ruling(Bob,...). The arbiter is neither party, by the names line. A ruling is final; no appeal.
+
+Checked with GLP 9d0952c's calculus/tools: gcsas.py commute yes, return yes, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates the contract. toglp.py --check (Dart) is left to Code's adoption.
 
 ### Verification
 
@@ -181,6 +185,12 @@ Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3a
 
 See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 3adaa3b. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
 
+GCE, 2026-11-25, submitted by Audit #4. GLP commit ab9002a is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: ab9002a, programs/gce/warnings/Warnings.txt, Villagers #2's text taken whole. A warning names its incident; Bob may answer it; Alice may withdraw it, and those who decide for Orga may annul it; a withdrawn or annulled warning no longer counts toward Expel, which those who decide for Orga decide.
+
+Checked as for Finding 6.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
@@ -197,7 +207,11 @@ Severity: medium · [Issue 137](https://github.com/udi-shapiro/Grassroots-Audit/
 
 ### Answer
 
-Awaiting a project response.
+GM, 2026-11-25, submitted by Audit #4. GLP commit b17ca87 is on branch claude/project-thread-2jjtyt of EShapiro2/GLP, not on main; it is sent to Code to merge. The text change waits for Udi's approval.
+
+Corrected: b17ca87, calculus/contracts/Tennis-Courts. Book now records the booking for both players with one occupancy fact: Alice's booking and booked stay, and the club's record "Club has Slot of Court partnered by Carol" (partnered/4) is added; the text says a booking counts among the outstanding bookings of each. Alice alone cancels (Tennis Courts:3, citing Booking:2), which frees the slot and ends the partner's part. Carol may withdraw (new Tennis Courts:4), which ends her part and leaves Alice's booking. A new partner books afresh, so a replacement needs that partner's consent through Book. First line: "extends and augments the union".
+
+Checked: gcsas.py (through adopt.py) compiles; relations.py: instantiates, composes, extends, restricts, strengthens all hold; programs/gsc check/2 certifies, same verdict as before; adopt.py --check and --adopted-check pass. Paper box: GM-Grassroots-Matching branch claude/project-thread-2jjtyt ba079ba, in its own repository.
 
 ### Verification
 
