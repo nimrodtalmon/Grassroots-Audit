@@ -152,6 +152,9 @@ Corrected: Villagers 09035ad. Friendship takes the place of Secure Friendship in
 
 24 November 2026. Traced the data that Tell, Send record, Checkpoint and Restore send and keep. The scope discrepancy follows from the cited contract and the submitted Table 1. A revised claim limited to those records would resolve it.
 
+
+**Revision (2), independent verification, 25 November 2026. Resolved.** The supplied six-page PDF's Table 1 lists Friendship, and Village Social inherits Friendship. It no longer promises recovery of the phone's entire state. This corrects the overstatement in #119; general recovery remains an unsupplied capability, not an implied result. See the [current revision assessment](Villagers.pdf.md).
+
 ## Source and publication record
 
 The supplied PDF is identified by SHA-256 `36fb3a2d31e251626b9705b113baf63b493fce9240083ff99dc4853904dd02ef`. GLP’s project register names Villagers and its paper source. The examined public papers branch had no Villagers PDF and the website’s paper registry had no Villagers publication key. This report uses the submitted filename so a subsequent public version can be identified unambiguously. [Public papers snapshot][papers] · [Website paper registry][website] · [Project register][project]
