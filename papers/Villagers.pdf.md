@@ -63,6 +63,10 @@ Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3a
 
 Corrected: Villagers 3adaa3b. A visit is booked and cancelled with the consent of its recipient (Care:1, Care:2). The visitor will visit (Care:3). The recipient attests the visit (Care:4). The resource is the care of a participant who needs it.
 
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+Corrected: Villagers d418e03 (Villagers #1; docs/decisions.md items 24 to 27; the case docs/cases/Care.md).
+
 ### Verification
 
 25 November 2026: confirmed by reading the printed Care definition and the pinned Booking text, logic pragmas and schemas. No new Care pragmas were accessible. Closure: demonstrate an unauthorised visitor being refused, an authorised arrangement being accepted, and a late cancellation/missed visit reaching the responsible person without being marked completed.
@@ -82,6 +86,10 @@ Severity: high · [Issue 131](https://github.com/udi-shapiro/Grassroots-Audit/is
 Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
 
 Corrected: Villagers 3adaa3b. A tool has a keeper. A participant collects it at her slot and returns it, each with the keeper's consent (Tools:2, Tools:3). She will return it on time and in the same condition (Tools:4). The keeper attests it out of use and in use again (Tools:5). A tool out of use cannot be booked (Tools:1). The keeper will tell those who booked it (Tools:6).
+
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+Corrected: Villagers f48983d (Villagers #1; docs/decisions.md item 28; the case docs/cases/Tools.md).
 
 ### Verification
 
@@ -103,6 +111,10 @@ Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3a
 
 Corrected: Villagers 3adaa3b. Approval needs the contractor's consent and locks the price (Works:1). The contractor attests completion (Works:2). The supervisor accepts it, releasing the price to the contractor (Works:3). The supervisor may reject it with a reason (Works:4). A work can be cancelled only before its completion is attested; the price then returns to the community (Works:5). Those in charge may replace the supervisor (Works:6). A work is approved once, so its price is paid once.
 
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+Corrected: Villagers 20d8b67. Approval needs the contractor's consent and locks the price (Works:1). The contractor attests completion (Works:2). The supervisor accepts it, releasing the price to the contractor (Works:3). The supervisor may reject it with a reason (Works:4). A work can be cancelled only before its completion is attested; the price then returns to the community (Works:5). Those in charge may replace the supervisor (Works:6). A work is approved once, so its price is paid once.
+
 ### Verification
 
 25 November 2026: textual counterexample against the complete printed Works contract. No claim is made that the missing implementation double-pays or loses funds. Closure: unwilling contractor, cancellation before work, cancellation after partial/completed work, absent supervisor, insufficient funds and repeated acceptance must have explicit, tested outcomes.
@@ -123,6 +135,12 @@ Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3a
 
 Corrected: Villagers 3adaa3b. A participant may forward a live notice or village emergency of the organisation to any participant (Notices:2, Emergencies:3). It thus reaches every participant connected to the village, also beyond friends. See: Broadcast:1; no contract promises delivery within Δ.
 
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+Corrected: Villagers 20d8b67. A participant may forward a live notice or village emergency of the organisation to any participant (Notices:2, Emergencies:3). It thus reaches every participant connected to the village, also beyond friends.
+
+See: Broadcast:1; no contract promises delivery within Δ.
+
 ### Verification
 
 25 November 2026: a disconnected-graph counterexample follows directly from the only forwarding rule. New Broadcast pragmas and deployed networking were unavailable. Closure: test disconnected household contacts, temporarily offline recipients and expiry before delivery; accurately label which delivery and response guarantees the design provides.
@@ -142,6 +160,12 @@ Severity: high · [Issue 134](https://github.com/udi-shapiro/Grassroots-Audit/is
 Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
 
 Corrected: Villagers 3adaa3b. A maker resolves her personal emergency by a broadcast (Emergencies:4). It is then no longer live, and she may broadcast a corrected one. A holder may broadcast the help he will give (Emergencies:5), and he will give it (Emergencies:6). See: Villagers docs/decisions.md item 10: a personal emergency is forwarded freely among friends, as Udi asked.
+
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+Corrected: Villagers 20d8b67. A maker resolves her personal emergency by a broadcast (Emergencies:4). It is then no longer live, and she may broadcast a corrected one. A holder may broadcast the help he will give (Emergencies:5), and he will give it (Emergencies:6).
+
+See: Villagers docs/decisions.md item 10: a personal emergency is forwarded freely among friends, as Udi asked.
 
 ### Verification
 
@@ -194,6 +218,10 @@ Checked as for Finding 6.
 GCE, 2026-11-25, on the auditor's review of PR 145, submitted by Audit #4. GLP commit bbf4f7e is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
 
 Corrected: bbf4f7e, programs/gce/warnings/Warnings.txt. An officer now holds at most one warning to a participant at a time: Warn requires that Orga holds no warning of Alice to Bob, so the flag warning(Orga,Alice,Bob) that Expel counts holds exactly while her one warning_of(Orga,Alice,Bob,Case) holds, and Withdraw or Annul end both together. No other incident of hers can be left uncounted, since there is none. Checked at GLP 9d0952c: gcsas.py commute, return, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates.
+
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+
+See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 20d8b67. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
 
 ### Verification
 
