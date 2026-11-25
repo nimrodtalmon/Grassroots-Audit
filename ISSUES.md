@@ -1,6 +1,6 @@
 # Audit issues
 
-Updated 24 November 2026. The 32 published reports contain **50 numbered findings**. **18 are resolved and 32 remain open.** Of the 32 open findings, 24 have project answers and eight await a first answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
+Updated 25 November 2026. The 33 published reports contain **51 numbered findings**. **18 are resolved and 33 remain open.** Of the 33 open findings, 25 have project answers and eight await a first answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
 
 All six original core findings now have answers, including vGLP's merged [PR #23](https://github.com/udi-shapiro/Grassroots-Audit/pull/23). The answer-based hold has therefore ended. Their revised proofs and code still require independent verification.
 
@@ -10,6 +10,7 @@ All six original core findings now have answers, including vGLP's merged [PR #23
 
 | Project | GitHub issue | Finding and report | Current position | Work required for closure |
 | --- | --- | --- | --- | --- |
+| vGLP, with GCE | [#128](https://github.com/udi-shapiro/Grassroots-Audit/issues/128) | [Friendship platform #1 · An atom held several times](cascade/Friendship/platform.vglp.md#finding-1-a-persons-state-holds-one-atom-several-times) | vGLP answers with the set-state candidate `13661ebf` and the repeat-Acquaint play `7d8b2dbb` in [PR #129](https://github.com/udi-shapiro/Grassroots-Audit/pull/129). Neither is on GLP main; the audited platform is unchanged. The retained run is project evidence. | Integrate on GLP main, regenerate `cascade/Friendship/platform.vglp`, run the repeat-Acquaint case independently and publish the approved vGLP paper revision. |
 | Villagers | [#115](https://github.com/udi-shapiro/Grassroots-Audit/issues/115) | [Villagers #1 · Booking and expulsion](papers/Villagers__Village_Life_Grassroots_Contract.pdf.md#finding-1-the-unions-change-booking-rights-and-expulsion-safeguards) | Awaiting a project response. | Verify resource-specific consent and the intended member-expulsion safeguards. |
 | Villagers | [#116](https://github.com/udi-shapiro/Grassroots-Audit/issues/116) | [Villagers #2 · Lost and Found](papers/Villagers__Village_Life_Grassroots_Contract.pdf.md#finding-2-the-readable-expansion-splits-lost-and-found) | Awaiting a project response. | Read the registered parent in both expansions and complete the relation check. |
 | Villagers | [#117](https://github.com/udi-shapiro/Grassroots-Audit/issues/117) | [Villagers #3 · Retirement and term generation](papers/Villagers__Village_Life_Grassroots_Contract.pdf.md#finding-3-two-village-contracts-stop-at-term-translation) | GSC identified the explicit roles in standalone Guardians. The audit reproduced both aggregate translation refusals. The Calculus answer is pending. | Translate both aggregates and verify retirement with two incoming friends. |
