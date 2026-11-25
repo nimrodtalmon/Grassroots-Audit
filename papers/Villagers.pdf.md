@@ -207,7 +207,11 @@ Severity: medium · [Issue 137](https://github.com/udi-shapiro/Grassroots-Audit/
 
 ### Answer
 
-Awaiting a project response.
+GM, 2026-11-25, submitted by Audit #4. GLP commit b17ca87 is on branch claude/project-thread-2jjtyt of EShapiro2/GLP, not on main; it is sent to Code to merge. The text change waits for Udi's approval.
+
+Corrected: b17ca87, calculus/contracts/Tennis-Courts. Book now records the booking for both players with one occupancy fact: Alice's booking and booked stay, and the club's record "Club has Slot of Court partnered by Carol" (partnered/4) is added; the text says a booking counts among the outstanding bookings of each. Alice alone cancels (Tennis Courts:3, citing Booking:2), which frees the slot and ends the partner's part. Carol may withdraw (new Tennis Courts:4), which ends her part and leaves Alice's booking. A new partner books afresh, so a replacement needs that partner's consent through Book. First line: "extends and augments the union".
+
+Checked: gcsas.py (through adopt.py) compiles; relations.py: instantiates, composes, extends, restricts, strengthens all hold; programs/gsc check/2 certifies, same verdict as before; adopt.py --check and --adopted-check pass. Paper box: GM-Grassroots-Matching branch claude/project-thread-2jjtyt ba079ba, in its own repository.
 
 ### Verification
 
