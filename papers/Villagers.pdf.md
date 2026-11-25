@@ -223,6 +223,10 @@ Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Aud
 
 See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 20d8b67. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
 
+GCE, 2026-11-25 19:04 UTC, submitted by Audit #4. GLP commit a8fbd7c is on branch claude/project-thread-q08byy of EShapiro2/GLP, after bbf4f7e, not on main. Udi approved the merge at 18:50 UTC; Code merges it once the Calculus publishes, and GCE will send the main commit.
+
+Corrected: a8fbd7c, programs/gce/warnings/Warnings.txt. GSC's checker refused Answer, which changed nothing at Orga; now Orga records the participant's answer, and the participant answers once. toglp.py --check at GLP 52261a6: Warnings and Disputes are syntactically_grassroots_with_wards.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
