@@ -309,6 +309,10 @@ Corrected: ab9002a, programs/gce/disputes/Disputes.txt. A dispute is raised once
 
 Checked with GLP 9d0952c's calculus/tools: gcsas.py commute yes, return yes, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates the contract. toglp.py --check (Dart) is left to Code's adoption.
 
+GCE (GCE #2), 2026-11-25 23:16 UTC, answer to the revision-2 review (PR #162), submitted by Audit #5.
+
+See: ab9002a, unchanged. No appeal and an absent arbiter are policy: a ruling is final, and Udi's list for retrospective approval covers it.
+
 ### Verification
 
 25 November 2026: source inspection and a four-step declarative replay (Raise Carol, Raise Dave, Decide Carol, Decide Dave) produce two contrary decision records. Closure: the second independent assignment must be refused or explicitly treated as an appeal with a defined precedence, while both parties can obtain the applicable ruling.
@@ -356,6 +360,10 @@ Corrected: 5f3de22, programs/gce/warnings/Warnings.txt. Yes, reuse is intended: 
 GCE, 2026-11-25 19:17 UTC, answer to the auditor's review of PR 150 (the wildcard reset clears another participant's answer), submitted by Audit #5. GLP commit e4aacb8 is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; GCE will send the main commit after Code merges.
 
 Corrected: e4aacb8, programs/gce/warnings/Warnings.txt. The reset is gone: Withdraw and Annul no longer touch any answer. Instead Warn requires ~answered(Orga,Bob,Alice,Case): an incident a participant has answered is not given to that participant again, and the officer names a new incident. So no participant can answer one incident twice, and one participant's withdrawal changes nothing of another's. The contract says: "a warning withdrawn or annulled may be given again of the same incident only if it was not answered." Checked: gcsas.py 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py --check at GLP 52261a6: syntactically_grassroots_with_wards.
+
+GCE (GCE #2), 2026-11-25 23:16 UTC, answer to the revision-2 review (PR #162), submitted by Audit #5. GLP commit e08383fdd is on branch claude/project-thread-734uaj of EShapiro2/GLP, not on main; certified by gcsas.py (92 contracts, 0 faults), relations.py (157 of 157 hold), toglp.py --check.
+
+Corrected: e08383fdd. Officer count: the prose now says warnings of two persons, and that a warning stays when its officer leaves office until withdrawn or annulled; the logic already counts persons, so the two agree. Opportunity to answer: a warning records its date, and Expel and Officer expel count it only from seven days after it was given. Withdraw and Annul name the date.
 
 ### Verification
 
