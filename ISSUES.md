@@ -1,6 +1,6 @@
 # Audit issues
 
-Updated 25 November 2026. The 35 published reports contain **60 numbered findings**. **18 are resolved and 42 remain open.** Of the 42 open findings, 25 have project answers and 17 await a first answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
+Updated 25 November 2026. The 35 published reports contain **60 numbered findings**. **18 are resolved and 42 remain open.** Of the 42 open findings, 26 have project answers and 16 await a first answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
 
 All six original core findings now have answers, including vGLP's merged [PR #23](https://github.com/udi-shapiro/Grassroots-Audit/pull/23). The answer-based hold has therefore ended. Their revised proofs and code still require independent verification.
 
