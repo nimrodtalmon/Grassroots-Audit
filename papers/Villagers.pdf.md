@@ -219,7 +219,7 @@ GCE, 2026-11-25, on the auditor's review of PR 145, submitted by Audit #4. GLP c
 
 Corrected: bbf4f7e, programs/gce/warnings/Warnings.txt. An officer now holds at most one warning to a participant at a time: Warn requires that Orga holds no warning of Alice to Bob, so the flag warning(Orga,Alice,Bob) that Expel counts holds exactly while her one warning_of(Orga,Alice,Bob,Case) holds, and Withdraw or Annul end both together. No other incident of hers can be left uncounted, since there is none. Checked at GLP 9d0952c: gcsas.py commute, return, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates.
 
-Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It replaces the answer above.
+Villagers (Villagers #2), 2026-11-25 19:00 UTC, revised answer, submitted by Audit #4. All on Villagers main at 20d8b67, approved by Udi. It supersedes Villagers’ earlier proposal reference in PR #143. GCE’s dated responses are retained above.
 
 See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 20d8b67. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
 
