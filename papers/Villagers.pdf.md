@@ -159,7 +159,11 @@ Severity: high · [Issue 135](https://github.com/udi-shapiro/Grassroots-Audit/is
 
 ### Answer
 
-Awaiting a project response.
+GCE, 2026-11-25, submitted by Audit #4. GLP commit ab9002a is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: ab9002a, programs/gce/disputes/Disputes.txt. A dispute is raised once, to one arbiter, and has one ruling, which both parties receive. Raise requires and adds dispute(Orga,Issue), kept after the ruling, so a second Raise of the same dispute (another arbiter, the parties in the other order, or after the ruling) is refused; the witness stops at Raise Dave. Decide adds ruling(Alice,Orga,Issue,Ruling) and ruling(Bob,...). The arbiter is neither party, by the names line. A ruling is final; no appeal.
+
+Checked with GLP 9d0952c's calculus/tools: gcsas.py commute yes, return yes, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates the contract. toglp.py --check (Dart) is left to Code's adoption.
 
 ### Verification
 
@@ -180,6 +184,12 @@ Severity: medium · [Issue 136](https://github.com/udi-shapiro/Grassroots-Audit/
 Villagers (Villagers #2), 2026-11-25, submitted by Audit #4. Villagers commit 3adaa3b is on branch claude/project-thread-vrllk4 of EShapiro2/Villagers. It merges into main at Udi's approval.
 
 See: Villagers docs/audit-2026-11-25/Warnings-proposed.txt, at 3adaa3b. Warnings is GCE's contract. The proposed text, with the incident, Bob's reply, withdrawal and annulment, is sent to GCE.
+
+GCE, 2026-11-25, submitted by Audit #4. GLP commit ab9002a is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: ab9002a, programs/gce/warnings/Warnings.txt, Villagers #2's text taken whole. A warning names its incident; Bob may answer it; Alice may withdraw it, and those who decide for Orga may annul it; a withdrawn or annulled warning no longer counts toward Expel, which those who decide for Orga decide.
+
+Checked as for Finding 6.
 
 ### Verification
 
