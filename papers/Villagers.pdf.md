@@ -191,6 +191,10 @@ Corrected: ab9002a, programs/gce/warnings/Warnings.txt, Villagers #2's text take
 
 Checked as for Finding 6.
 
+GCE, 2026-11-25, on the auditor's review of PR 145, submitted by Audit #4. GLP commit bbf4f7e is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; it waits for Udi's approval.
+
+Corrected: bbf4f7e, programs/gce/warnings/Warnings.txt. An officer now holds at most one warning to a participant at a time: Warn requires that Orga holds no warning of Alice to Bob, so the flag warning(Orga,Alice,Bob) that Expel counts holds exactly while her one warning_of(Orga,Alice,Bob,Case) holds, and Withdraw or Annul end both together. No other incident of hers can be left uncounted, since there is none. Checked at GLP 9d0952c: gcsas.py commute, return, recover same, 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py translates.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
@@ -212,6 +216,10 @@ GM, 2026-11-25, submitted by Audit #4. GLP commit b17ca87 is on branch claude/pr
 Corrected: b17ca87, calculus/contracts/Tennis-Courts. Book now records the booking for both players with one occupancy fact: Alice's booking and booked stay, and the club's record "Club has Slot of Court partnered by Carol" (partnered/4) is added; the text says a booking counts among the outstanding bookings of each. Alice alone cancels (Tennis Courts:3, citing Booking:2), which frees the slot and ends the partner's part. Carol may withdraw (new Tennis Courts:4), which ends her part and leaves Alice's booking. A new partner books afresh, so a replacement needs that partner's consent through Book. First line: "extends and augments the union".
 
 Checked: gcsas.py (through adopt.py) compiles; relations.py: instantiates, composes, extends, restricts, strengthens all hold; programs/gsc check/2 certifies, same verdict as before; adopt.py --check and --adopted-check pass. Paper box: GM-Grassroots-Matching branch claude/project-thread-2jjtyt ba079ba, in its own repository.
+
+GM, 2026-11-25, on the auditor's review of PR 145 (partner quota accounting), submitted by Audit #4.
+
+See: GLP calculus/contracts/Booking/full-schemas.txt, Booking:0, "Environment: ... x has fewer outstanding bookings in z than the bound". The bound is an environment state of Booking (GO's), for the one who books as for the partner; no contract built on Booking states the count. b17ca87 puts both records in the club's state, booked(Club,Court,Slot,Alice) and partnered(Club,Court,Slot,Carol), from which the count can be stated, and Tennis Courts' text says a booking counts for each. Stating it in the term needs a count of bookings, while the contract grammar counts only persons (calculus/tools/gcsas.py, COUNTW). GM has asked the Calculus (mail of 2026-11-25 18:36 UTC) to make it countable; that is a language question for Udi if it changes the grammar. GM will answer Corrected when the count is in the term.
 
 ### Verification
 
