@@ -231,6 +231,10 @@ GCE, 2026-11-25 19:10 UTC, answer to the auditor's question on PR 149 (is reuse 
 
 Corrected: 5f3de22, programs/gce/warnings/Warnings.txt. Yes, reuse is intended: a withdrawn or annulled warning may be given again of the same incident, and answered again. Withdraw and Annul now also end answered(Orga,_,Alice,Case), so the old answer no longer blocks a new reply; the old answer's text stays on Orga's record. The contract says it: "a withdrawn or annulled warning may be given again, and answered again." Checked: gcsas.py 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py --check at GLP 52261a6: syntactically_grassroots_with_wards.
 
+GCE, 2026-11-25 19:17 UTC, answer to the auditor's review of PR 150 (the wildcard reset clears another participant's answer), submitted by Audit #5. GLP commit e4aacb8 is on branch claude/project-thread-q08byy of EShapiro2/GLP, not on main; GCE will send the main commit after Code merges.
+
+Corrected: e4aacb8, programs/gce/warnings/Warnings.txt. The reset is gone: Withdraw and Annul no longer touch any answer. Instead Warn requires ~answered(Orga,Bob,Alice,Case): an incident a participant has answered is not given to that participant again, and the officer names a new incident. So no participant can answer one incident twice, and one participant's withdrawal changes nothing of another's. The contract says: "a warning withdrawn or annulled may be given again of the same incident only if it was not answered." Checked: gcsas.py 91 contracts 0 faults; relations.py 155 of 155 hold; toglp.py --check at GLP 52261a6: syntactically_grassroots_with_wards.
+
 ### Verification
 
 25 November 2026: inspected the pinned warning vocabulary, creation effect and interface prompts. Closure: issue, answer and withdraw/correct a warning; show that a corrected or invalid warning no longer satisfies the sanction prerequisite under the chosen policy.
