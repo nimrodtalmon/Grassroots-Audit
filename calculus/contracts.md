@@ -6,6 +6,8 @@ Date: 2026-11-25
 
 The nonempty-set rule resolves the earlier counterexamples to the grassroots proof. A two-run check at the paper’s cited commit finds that Definition 2 merges identical acts declared independently while the compiler keeps their branch conditions separate. The Knowledge example and the outstanding GSC results are also covered in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md).
 
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** The project sent the remaining paper points to its Cowork session as recommendations. In addition to the numbered findings below, it recommends adding “over the same vocabulary and declarations” to Proposition 11’s final equivalence. No corrected manuscript or public paper build was supplied with this follow-up. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ## Review of the fifteen-page Calculus and GSC subsumption, 25 November 2026
 
 Project: Calculus, with GSC  
@@ -637,6 +639,10 @@ Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
 
 Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved for the operations of Section 3. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
+**Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** Corrected: `7d15914` (project-reported paper commit). Shared descendants now take their combined conditions, consents and effects once. The project treats the renamed Organisation act as a separate descendant of Guardians in Rehearsal Rooms. It reports a ward-subtyping candidate at `7d4714a` under measurement and leaves identity after renaming to the paper team. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940).
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends following the compiler: inherited acts merge only when both inheritance lines originate in the same act of the same contract, after renaming or lifting; independently declared identical acts remain separate. It recommends recording act origin in Definition 2 and restating Proposition 17 on that basis. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. State and prove the square for §3 or scope the existing theorem explicitly to Definition 18.
@@ -644,6 +650,8 @@ Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved 
 **Auditor, 24 November 2026, catalogue and response verification.** **Open in the five-page revision.** The appendices and old proof are gone, while the abstract still asserts mutual determination and commutation. §§2–3 define the logical objects and operations. The five pages supply neither formal-English translation/inverse nor a theorem or proof for these operations. The reply says the proofs will be given. Provide the maps, their domains and equivalences, and proofs, or change the abstract to the result presently supported.
 
 25 November 2026, supplied Calculus (11), 15 pages. **The prior absence of proofs is superseded. The correspondence claim remains open.** Sections 2–4 now define both translations and prove Propositions 9 and 15. The exact inverse nevertheless removes an explicitly stated precondition of deletion, as shown in the new review above. Proposition 15 also uses a simultaneous augmentation that Definition 10 cannot always decompose into valid one-literal steps (Finding 14 follow-up). The six mathematical controls are preserved in calculus/calculus-math-controls-2026-11-25.py. No catalogue experiment was rerun.
+
+**Auditor, 26 November 2026.** Independently reran the public `calculus/tests/merge/gr` inputs through `calculus/tools/gcsas.py` at `1503cddc1a9b6feff952344d7d9f186e6f5c492f` and current public GLP `7b68b74c6388135736632957b321ae63503feaf7`. At both pins, the shared-root fixture gives one `Signal` requiring `w(Alice)` and `q(Alice)`. Copying root C to V and pointing Q’s parent and citation to V gives two independently enabled `Signal` clauses. Both parent orders agree. All five shared-root and all six independent-root contracts passed Commute, Return and Recover at each pin. This verifies compiler behavior. The comparison with Definition 2 is the reading recorded in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md). The full catalogue was outside this replay.
 
 ## Finding 11. The empty initial state violates the stated reflexivity constraint
 
@@ -758,6 +766,10 @@ Awaiting a project response.
 Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
 
 Corrected: 6dfa1ed9. Weakening and strengthening are by a well-typed literal; a guarding agent added is an agent of a literal of the clause; lifting names the type of the added argument and lifts no symmetric predicate. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
+
+**Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [response to revision (12)](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940). The project cites the earlier review's verification of deletion normalization and simultaneous augmentation and refers the remaining inverse and targeted-union proof comments to its paper team.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends applying an augmentation only to union summands that contain its target clause. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
 
 ### Verification
 
@@ -1003,11 +1015,17 @@ Start the worked example after two distinct people establish their identities, a
 
 Awaiting a project response.
 
+**Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [Knowledge:2 response](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940). The project keeps the discrepancy open. It reports that adding `met` caused the checker to reject contracts involving wards and that a broader run was in progress. Its result was pending in this answer.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project reports that its proposed `met` addition makes the checker reject AI Agents, Ads, Anonymous Matching, App and other contracts as “person unobtainable” at Acquaint, while Agora, Auction and Backchannel Feeds pass. Its 106-contract run was still in progress. Pending a decision, it recommends labelling the paper example “a strengthened Knowledge.” See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ### Verification
 
 Compare the enabledness of the revised example with the catalogue on empty and established-person states.
 
 25 November 2026, supplied Calculus (11), p. 6. **The empty-state example is corrected; exact catalogue alignment remains unverified in this review.** Acquaint's body now requires person at both agents and its worked states contain person. The current catalogue/checker was not rerun or compared atom for atom; the issue is retained for that remaining boundary.
+
+**Auditor, 26 November 2026.** The public `calculus/contracts/Knowledge/full-schemas.txt` is identical at the cited and current GLP commits. Acquaint and Introduce both add `knows`, and Acquaint has no `met` effect. Keep alignment open. The project’s ward rejection and wider run remain attributed.
 
 ## Finding 23. The allowed local constraints can exclude the designated initial state
 
@@ -1098,6 +1116,8 @@ One cannot instead count every syntactically occurring b in an arbitrary represe
 
 Awaiting a project response.
 
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends stating that expanded atoms are nonempty and naming the support-bearing atom that witnesses the other person, for example `met(B)` from `A:met({A,B})`. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ### Verification
 
 25 November 2026. The ADT_SUPPORT and CROSS_ENABLEDNESS controls independently check the finite set equalities, enabledness and changes. The full theorem counterexample above is a mathematical argument, not a GLP implementation test. Finding open.
@@ -1128,9 +1148,13 @@ The appendix additionally assumes a collection in an agent or guard position has
 
 Awaiting a project response.
 
+**Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** Corrected: `e2a100a` and `6072041` (project-reported paper commits). The project says §3.1 now requires a nonempty set for elementwise expansion into a scalar argument, and cites appendix commit `7b4559c` for reading `g(s)` as each ground atom in the expansion. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940).
+
 ### Verification
 
 25 November 2026. COLLECTION_CONDITIONAL checks the overlap example under the reading identified above. No claim is made that a compiler using a different, documented validation order accepts it. Finding open.
+
+**Auditor, 26 November 2026.** Under the nonempty scalar-argument rule described in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md), the earlier empty argument can no longer erase all witness atoms. Keep the GSC role extents and clearing obligations open. The cited private revisions remain project evidence.
 
 ## Finding 27. The change from GSC multisets to sets lacks a preservation theorem
 
@@ -1160,6 +1184,8 @@ There are other semantic choices to preserve or deliberately change:
 
 Awaiting a project response.
 
+**Calculus, 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [project response](https://github.com/udi-shapiro/Grassroots-Audit/issues/168#issuecomment-7203619958). The project keeps the GSC coverage gap open pending Udi’s decision (item 116 in the project record).
+
 ### Verification
 
 25 November 2026. WITNESSING checks the difference between multiset production and idempotent set insertion. The absence of an encoding is a coverage gap, not a proof of inexpressibility. Finding open.
@@ -1188,6 +1214,8 @@ GSC's general Polite theorem is another independent result: it applies to arbitr
 
 Awaiting a project response.
 
+**Calculus, 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [project response](https://github.com/udi-shapiro/Grassroots-Audit/issues/169#issuecomment-7203620195). The project keeps the scope of the remaining GSC results open pending Udi’s decision (item 116 in the project record).
+
 ### Verification
 
 25 November 2026. Checked the quantifiers and predicates of both definitions and the separating construction above. Finding open.
@@ -1211,6 +1239,8 @@ GSC Appendix C explicitly introduces environmental initialization and unary plat
 ### Answer
 
 Awaiting a project response.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project leaves this item unchanged with Findings 26–28 while Udi decides the Calculus/GSC scope. It supplied no environment semantics or public revision. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
 
 ### Verification
 
