@@ -3,8 +3,23 @@
 Project: VMAT
 Auditor: ChatGPT/Codex
 Date: 2026-11-26
-GLP commit: — (the authors supplied the reviewed revision as a PDF)
-Other source versions: `VMAT__Volitional_MA_Transactions (22).pdf`, 29 pages, 615,513 bytes. The earlier repository snapshot is identified in the historical review below.
+GLP commit: 3b85cbe12919c5411cfeecf3c3a157e6135e4efc (papers branch, revision (23) comparison)
+Other source versions: The supplied revisions and earlier repository snapshots are identified in their dated sections.
+
+## Revision 23 review
+
+**26 November 2026.** The revised paper resolves both formal findings from the review against Luca’s thirteen comments. Definition 11 now assigns each else effect a class before testing for overlapping closures. Definition 4 now allows a person to will a transaction with another person. Section 2 describes the definitions in dependency order. Two statements in the worked applications still require correction, recorded as findings 3 and 4. Both passages also appeared in revision (22).
+
+**Evidence and scope.** Reviewed §2 of the supplied 28-page `VMAT__Volitional_MA_Transactions (23).pdf` (607,976 bytes), the corresponding examples in §§4.1–4.2, and the Section 2 extension argument in Appendix B. Compared with revision (22), Luca’s comments and the project’s two answers. Independently checked the same operative definitions and application claims in the [public PDF at GLP papers commit `3b85cbe129`](https://github.com/EShapiro2/GLP/blob/3b85cbe12919c5411cfeecf3c3a157e6135e4efc/papers/VMAT.pdf) (607,855 bytes, SHA-256 `1298d8ed047aab96d7c099cb86319282b737dacbdadac8d78320f85186e1bc09`). Revision (23) also removes the former appendix on implementations, faults and resilience, and §6 places fault-tolerant implementation in future work. The earlier report’s description of that appendix applies to the earlier manuscript.
+
+| Luca’s comments | Result in revision (23) |
+| --- | --- |
+| 1 and 7 · People, agents and guards | §2.1 identifies the person by the agent name. Definitions 1 and 3 specify exactly whose will is consulted. A sentence on the scope of that identification, including shared devices and multiple devices per person, remains optional clarification. |
+| 2, 3 and 4 · Equivalence, enabledness and the specification | Definition 11(b)–(d) types else effects before comparing closures. A guarded step leaves evidence of its class by removing a will held by a guard. Distinct-class unguarded and else effects are separated by 11(d). Lemma 13 can therefore use a unique inducing class and proves the enabledness equivalence in both directions. The elements and compatibility conditions of $R$ are explicit. |
+| 5 · Withdrawal and liveness | §2, p. 9, correctly limits the obligation to classes that stay enabled. The liveness paragraphs on pp. 15 and 17 still state a stronger claim. Finding 3 gives two correct runs that separate the claims. |
+| 6 and 11 · Transaction types and dependency order | The introduction to §2 says *volition-guarded transaction* where it introduces a machine transaction paired with a guard and explains the bottom-up definitions. Table 1, p. 6, gives their types. An informal preview of willingness still precedes Definition 3. |
+| 8, 9 and 10 · Conventions, notation and fulfilment | Definition 1 allows an empty guard and a finite transaction can cover the whole finite population. Definition 10’s local reuse of $c$ is harmless. Subtracting a fulfilled class from every person’s will is well typed because only participants can hold it. |
+| 12 and 13 · Worked example and class restrictions | The binary Befriend example on p. 5 now type-checks at each step. Definition 2 explains shared participant sets and countability, and the proof of Lemma 8 uses the enumeration. The change of will in the example also shows why the graph can stay fixed (finding 4). |
 
 ## VMAT (22) and Luca’s review of Section 2
 
@@ -59,11 +74,15 @@ The resulting relation can fail transitivity. From the same machine source $(0,0
 
 ### Answer
 
-Awaiting the VMAT project’s response.
+VMAT project, 26 November 2026. The project attributes the correction to source commit `76a6e17`. Definition 11(c) assigns the else-branch its then-class before clause (d) compares closures.
+
+Corrected: [Project answer](https://github.com/udi-shapiro/Grassroots-Audit/issues/186#issuecomment-7204449103).
 
 ### Verification
 
 26 November 2026. Confirmed against the supplied revision (22). The three steps above have inducing class sets $\{A\}$, $\{A,B\}$ and $\{B\}$ under the reading described above.
+
+26 November 2026, revision (23), pp. 8–9. **Correction verified.** Clause (b) separates else effects from the ordinary domain. Clause (c) assigns the same class for any common else effect. With that assignment, the old unary else effect and the stationary-$q$ unguarded effect have different classes and intersecting closures, so clause (d) excludes the specification. Lemma 13’s class is well defined on this case.
 
 ## Finding 2: A local volition change needs the ambient transaction set
 
@@ -75,11 +94,49 @@ Definition 3 requires the participant set of every transaction in $M$ to be cont
 
 ### Answer
 
-Awaiting the VMAT project’s response.
+VMAT project, 26 November 2026. The project attributes the correction to source commit `76a6e17`. Definition 4(1) uses the ambient population and Definition 11(3)(i) cites it.
+
+Corrected: [Project answer](https://github.com/udi-shapiro/Grassroots-Audit/issues/187#issuecomment-7204449306).
 
 ### Verification
 
 26 November 2026. Confirmed against the supplied revision (22). The binary Befriend example has participants outside the singleton configuration used in Definition 4(1).
+
+26 November 2026, revision (23), pp. 5, 6 and 8. **Correction verified.** Take $P=\{p,q\}$ and the class of binary Befriend. By Definition 4(1), $p$ can add that class while its machine state and all of $q$’s state stay fixed. Then $q$ can add it independently. Definition 11(3)(i) uses that rule directly, and Table 1 gives the same population $P$.
+
+## Finding 3: The examples promise progress after transient enabling
+
+Severity: medium · [Issue #191](https://github.com/udi-shapiro/Grassroots-Audit/issues/191)
+
+Sections 4.1 and 4.2 (pp. 15 and 17) say that once the named transactions are enabled they must eventually occur. Definition 7 requires a step of the class if the class stays continuously enabled. A person may withdraw a will before a machine acts.
+
+Take the initial two-person social graph. First $p$ wills Befriend, then $q$ wills it, then $p$ withdraws. Befriend is enabled in the third configuration and disabled in the last. The two are still strangers. No class is enabled at the endpoint, so this finite run is safe and live under Definition 7. Similarly, a sole currency agent may will a Mint of one coin and withdraw that will before minting. No other will is needed in either example.
+
+**Correction.** In each application say that if the class remains enabled, a member must eventually occur. Enabling depends on the machine precondition and on the applicable guard. In currencies, one machine effect can also be taken under an alternative guard as explained after Definition 37.
+
+### Answer
+
+Awaiting the VMAT project’s response.
+
+### Verification
+
+26 November 2026. Traced both runs against Definitions 4, 7 and 12 in revision (23), and checked the two application paragraphs in the pinned public PDF.
+
+## Finding 4: A volition change preserves the friendship graph
+
+Severity: low · [Issue #192](https://github.com/udi-shapiro/Grassroots-Audit/issues/192)
+
+Immediately after Lemma 34 (§4.1, p. 15), the text says exactly one friendship edge changes between consecutive configurations of a safe run. The first step of the Befriend example already gives a counterexample. Adding the class to $p$’s will changes the agent configuration while leaving both friend sets empty.
+
+**Correction.** A volition change preserves the graph. A Befriend machine step adds one edge and an Unfriend machine step removes one. Lemma 34 about mutuality holds in all three cases.
+
+### Answer
+
+Awaiting the VMAT project’s response.
+
+### Verification
+
+26 November 2026. Checked the projection to machine states in Definitions 3–4 and the claim following Lemma 34 in revision (23) and the pinned public PDF.
 
 ## Earlier VMAT review of 12 November 2026
 
