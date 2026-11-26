@@ -1,6 +1,6 @@
 # Audit issues
 
-Updated 26 November 2026. The 37 published reports contain **67 numbered findings**. **26 are resolved and 41 remain open.** Of the 41 open findings, 32 have project answers and 9 await a first answer. Three resolved findings also have no recorded project answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
+Updated 26 November 2026. The 37 published reports contain **69 numbered findings**. **26 are resolved and 43 remain open.** Of the 43 open findings, 32 have project answers and 11 await a first answer. Three resolved findings also have no recorded project answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
 
 All six original core findings now have answers, including vGLP's merged [PR #23](https://github.com/udi-shapiro/Grassroots-Audit/pull/23). The answer-based hold has therefore ended. Their revised proofs and code still require independent verification.
 
@@ -10,6 +10,8 @@ All six original core findings now have answers, including vGLP's merged [PR #23
 
 | Project | GitHub issue | Finding and report | Current position | Work required for closure |
 | --- | --- | --- | --- | --- |
+| VMAT | [#186](https://github.com/udi-shapiro/Grassroots-Audit/issues/186) | [VMAT #1 · Else effects need a class in the closure test](papers/VMAT.pdf.md#finding-1-else-effects-need-a-class-in-the-closure-test) | Open in revision (22). | Assign each else effect its then-class before comparing closures in Definition 11(b). |
+| VMAT | [#187](https://github.com/udi-shapiro/Grassroots-Audit/issues/187) | [VMAT #2 · A local volition change needs the ambient transaction set](papers/VMAT.pdf.md#finding-2-a-local-volition-change-needs-the-ambient-transaction-set) | Open in revision (22). | Define a local volition change using the ambient class set so a person can will a binary Befriend. |
 | Calculus, with GSC | [#166](https://github.com/udi-shapiro/Grassroots-Audit/issues/166) | [Calculus paper #25 · Datatype equality does not preserve the agent occurrences used by the grassroots proof](calculus/contracts.md#finding-25-datatype-equality-does-not-preserve-the-agent-occurrences-used-by-the-grassroots-proof) | Open in Calculus (11) against GSC (19). | Prove a support/substitution lemma and exclude the unguarded first interaction. |
 | Calculus, with GSC | [#167](https://github.com/udi-shapiro/Grassroots-Audit/issues/167) | [Calculus paper #26 · Collection participants need a defined expansion and validation rule](calculus/contracts.md#finding-26-collection-participants-need-a-defined-expansion-and-validation-rule) | Open in Calculus (11) against GSC (19). | Define finite extents and validation order; verify the overlap and empty-extent cases. |
 | Calculus, with GSC | [#168](https://github.com/udi-shapiro/Grassroots-Audit/issues/168) | [Calculus paper #27 · The change from GSC multisets to sets lacks a preservation theorem](calculus/contracts.md#finding-27-the-change-from-gsc-multisets-to-sets-lacks-a-preservation-theorem) | Open in Calculus (11) against GSC (19). | Specify a preservation theorem and re-prove witnessing for set states. |
