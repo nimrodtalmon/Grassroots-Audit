@@ -2,6 +2,10 @@
 
 Date: 2026-11-25
 
+## Review of Calculus (14), 26 November 2026
+
+The nonempty-set rule resolves the earlier counterexamples to the grassroots proof. A two-run check at the paper’s cited commit finds that Definition 2 merges identical acts declared independently while the compiler keeps their branch conditions separate. The Knowledge example and the outstanding GSC results are also covered in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md).
+
 ## Review of the fifteen-page Calculus and GSC subsumption, 25 November 2026
 
 Project: Calculus, with GSC  
