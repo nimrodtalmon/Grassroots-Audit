@@ -2,6 +2,10 @@
 
 Date: 2026-11-25
 
+## Review of Calculus (15), 26 November 2026
+
+Definition 2 now distinguishes independent source contracts. Two separately citable acts with identical triples within one contract still collapse. The revised vocabulary also exposes a Coins overlap in Proposition 11 and a phrase-versus-predicate lifting problem in Proposition 17. Proposition 14 and the Appendix A witness choice resolve Findings 14 and 25. The historical 91-contract run passed again. The remaining GSC coverage and the three inheritance tests at two compiler commits are documented in the [revision (15) review](.review-files/Calculus_15_GSC_19_Review.md).
+
 ## Review of Calculus (14), 26 November 2026
 
 The nonempty-set rule resolves the earlier counterexamples to the grassroots proof. A two-run check at the paper’s cited commit finds that Definition 2 merges identical acts declared independently while the compiler keeps their branch conditions separate. The Knowledge example and the outstanding GSC results are also covered in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md).
@@ -653,6 +657,8 @@ Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved 
 
 **Auditor, 26 November 2026.** Independently reran the public `calculus/tests/merge/gr` inputs through `calculus/tools/gcsas.py` at `1503cddc1a9b6feff952344d7d9f186e6f5c492f` and current public GLP `7b68b74c6388135736632957b321ae63503feaf7`. At both pins, the shared-root fixture gives one `Signal` requiring `w(Alice)` and `q(Alice)`. Copying root C to V and pointing Q’s parent and citation to V gives two independently enabled `Signal` clauses. Both parent orders agree. All five shared-root and all six independent-root contracts passed Commute, Return and Recover at each pin. This verifies compiler behavior. The comparison with Definition 2 is the reading recorded in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md). The full catalogue was outside this replay.
 
+**Auditor, 26 November 2026, Calculus (15).** Definition 2 now handles the shared-root and distinct-root tests. Two identical numbered declarations in one root can still be restricted independently by the compiler. The report also gives the Coins vocabulary overlap and a disjoint-pattern counterexample to the lifting step of Proposition 17. Finding open. See the [revision (15) review](.review-files/Calculus_15_GSC_19_Review.md).
+
 ## Finding 11. The empty initial state violates the stated reflexivity constraint
 
 Severity: high
@@ -778,6 +784,8 @@ Corrected: 6dfa1ed9. Weakening and strengthening are by a well-typed literal; a 
 **Auditor, 24 November 2026, catalogue and response verification.** **Partly verified; open in the five-page revision.** Definition 6 now types added literals and confines a new guard to an agent already occurring in the clause. Definition 7(3) types the fresh lift position and excludes symmetric predicates. It still admits a reflexive, nonsymmetric predicate. Lifting agent-local p(Agent) to p(Agent,T) leaves Definition 4’s implicit unary p(a) ill-typed. Exclude reflexive predicates from lifting or define a typed parameter-indexed diagonal and its semantics.
 
 25 November 2026, supplied Calculus (11), Definition 10. **The original guard, typing and lifting objections are corrected; the domain problem remains open in a new form.** Both symmetric and reflexive predicates are now excluded from lifting. But the valid two-holder augmentation in the review above cannot be performed by either order of the two allowed one-literal additions; each intermediate implication violates the clause condition. Permit simultaneous augmentation or restrict the English citation domain, then re-prove Proposition 15. Proposition 12 also needs a convention for applying a targeted partial operation to a union component without that target.
+
+**Auditor, 26 November 2026, Calculus (15).** Proposition 14 now augments each summand that contains the target. This completes the guard, typing and simultaneous-augmentation repairs. Finding resolved. See the [revision (15) review](.review-files/Calculus_15_GSC_19_Review.md).
 
 ## Finding 15. Removing redundant implications can delete an inherited clause during extension
 
@@ -1027,6 +1035,8 @@ Compare the enabledness of the revised example with the catalogue on empty and e
 
 **Auditor, 26 November 2026.** The public `calculus/contracts/Knowledge/full-schemas.txt` is identical at the cited and current GLP commits. Acquaint and Introduce both add `knows`, and Acquaint has no `met` effect. Keep alignment open. The project’s ward rejection and wider run remain attributed.
 
+**Auditor, 26 November 2026, Calculus (15).** Sections 2.1 and 3.2 still call the four-effect variant Knowledge:2. The pinned public Acquaint has the two reciprocal knows effects. Label the strengthened variant or align the catalogue. Finding open. See the [revision (15) review](.review-files/Calculus_15_GSC_19_Review.md).
+
 ## Finding 23. The allowed local constraints can exclude the designated initial state
 
 Severity: high
@@ -1121,6 +1131,8 @@ Awaiting a project response.
 ### Verification
 
 25 November 2026. The ADT_SUPPORT and CROSS_ENABLEDNESS controls independently check the finite set equalities, enabledness and changes. The full theorem counterexample above is a mathematical argument, not a GLP implementation test. Finding open.
+
+**Auditor, 26 November 2026, Calculus (15).** Section 3.1 restricts in-clause constructors to those preserving elements and scalar expansion to nonempty sets. Appendix A explicitly chooses an expanded atom that contains the other person for the introduction argument. This resolves the recorded support and empty-set witnesses. Finding resolved. See the [revision (15) review](.review-files/Calculus_15_GSC_19_Review.md).
 
 ## Finding 26. Collection participants need a defined expansion and validation rule
 
