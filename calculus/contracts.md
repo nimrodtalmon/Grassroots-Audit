@@ -267,6 +267,17 @@ Keep the six relation types. A shared ancestor can denote different parties or s
 
 The report recommends an escrow for each paid agreement, a common rule for counting delegated votes and a winding-up rule for institutions with outstanding liabilities. Federation already has five schemas outside the catalogue. The joint-booking discussion also identifies a decision for Tennis Courts about how bookings count against each player’s limit. [Federation schemas](https://github.com/EShapiro2/GLP/blob/b0c220c6d77c24561af9f3ce4221ee2dd8aecf0c/programs/federation/GFWC.glp#L39) · [Federation proposal](https://github.com/EShapiro2/GLP/issues/140)
 
+## Calculus (12) and (13) against GSC (19), November 2026
+
+Grassroots Review revisited the mathematical results recorded here for the Calculus project. The two complete reports identify the reviewed manuscript editions by digest and give their evidence and controls.
+
+| Reviewed edition | Verification |
+| --- | --- |
+| [Calculus (12), 25 November](.review-files/Calculus_12_GSC_19_Revision_Review.md) | The revised definitions repair deletion normalization and simultaneous citation. Empty elementwise expansion can still erase a witness used in Lemmas 5 and 21 and Theorem 19. |
+| [Calculus (13), 26 November](.review-files/Calculus_13_GSC_19_Review.md) | The 91-contract experiment was reproduced. The revised union proof still needs a criterion for deciding when descendants of a shared act merge. The empty-set counterexample and the outstanding GSC coverage obligations persist. |
+
+These are edition-specific verifications of the existing record, including Findings 10, 22 and 25–29. The six finite controls and original findings for edition (11) are recorded in [PR #172](https://github.com/udi-shapiro/Grassroots-Audit/pull/172).
+
 ## Findings and responses
 
 The findings below refer to the audited revision. The numbered headings are stable locations for project answers.
