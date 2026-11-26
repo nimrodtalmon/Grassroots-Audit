@@ -6,6 +6,8 @@ Date: 2026-11-25
 
 The nonempty-set rule resolves the earlier counterexamples to the grassroots proof. A two-run check at the paper’s cited commit finds that Definition 2 merges identical acts declared independently while the compiler keeps their branch conditions separate. The Knowledge example and the outstanding GSC results are also covered in the [revision (14) review](.review-files/Calculus_14_GSC_19_Review.md).
 
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** The project sent the remaining paper points to its Cowork session as recommendations. In addition to the numbered findings below, it recommends adding “over the same vocabulary and declarations” to Proposition 11’s final equivalence. No corrected manuscript or public paper build was supplied with this follow-up. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ## Review of the fifteen-page Calculus and GSC subsumption, 25 November 2026
 
 Project: Calculus, with GSC  
@@ -639,6 +641,8 @@ Corrected: 6dfa1ed9. The appendices are deleted; the two results will be proved 
 
 **Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** Corrected: `7d15914` (project-reported paper commit). Shared descendants now take their combined conditions, consents and effects once. The project treats the renamed Organisation act as a separate descendant of Guardians in Rehearsal Rooms. It reports a ward-subtyping candidate at `7d4714a` under measurement and leaves identity after renaming to the paper team. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940).
 
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends following the compiler: inherited acts merge only when both inheritance lines originate in the same act of the same contract, after renaming or lifting; independently declared identical acts remain separate. It recommends recording act origin in Definition 2 and restating Proposition 17 on that basis. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ### Verification
 
 24 November 2026. Checked against the supplied manuscript identified above. State and prove the square for §3 or scope the existing theorem explicitly to Definition 18.
@@ -764,6 +768,8 @@ Calculus (Calculus #8), 2026-11-24, submitted by Audit #4.
 Corrected: 6dfa1ed9. Weakening and strengthening are by a well-typed literal; a guarding agent added is an agent of a literal of the clause; lifting names the type of the added argument and lifts no symmetric predicate. The paper is in its own repository, EShapiro2/GCC-Grassroots-Contracts-Calculus, main 6dfa1ed9; the record is its `docs/design-decisions.md`, item 62.
 
 **Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [response to revision (12)](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940). The project cites the earlier review's verification of deletion normalization and simultaneous augmentation and refers the remaining inverse and targeted-union proof comments to its paper team.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends applying an augmentation only to union summands that contain its target clause. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
 
 ### Verification
 
@@ -1011,6 +1017,8 @@ Awaiting a project response.
 
 **Calculus (Calculus #10), 26 November 2026, 21:19 UTC, submitted by Audit #6.** See: [Knowledge:2 response](https://github.com/udi-shapiro/Grassroots-Audit/issues/167#issuecomment-7203617940). The project keeps the discrepancy open. It reports that adding `met` caused the checker to reject contracts involving wards and that a broader run was in progress. Its result was pending in this answer.
 
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project reports that its proposed `met` addition makes the checker reject AI Agents, Ads, Anonymous Matching, App and other contracts as “person unobtainable” at Acquaint, while Agora, Auction and Backchannel Feeds pass. Its 106-contract run was still in progress. Pending a decision, it recommends labelling the paper example “a strengthened Knowledge.” See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
+
 ### Verification
 
 Compare the enabledness of the revised example with the catalogue on empty and established-person states.
@@ -1107,6 +1115,8 @@ One cannot instead count every syntactically occurring b in an arbitrary represe
 ### Answer
 
 Awaiting a project response.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project recommends stating that expanded atoms are nonempty and naming the support-bearing atom that witnesses the other person, for example `met(B)` from `A:met({A,B})`. No corrected manuscript was supplied. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
 
 ### Verification
 
@@ -1229,6 +1239,8 @@ GSC Appendix C explicitly introduces environmental initialization and unary plat
 ### Answer
 
 Awaiting a project response.
+
+**Calculus follow-up, 26 November 2026, 22:10 UTC, submitted by Audit #6.** **Open.** The project leaves this item unchanged with Findings 26–28 while Udi decides the Calculus/GSC scope. It supplied no environment semantics or public revision. See: [full response](https://github.com/udi-shapiro/Grassroots-Audit/pull/190#issuecomment-7204442939).
 
 ### Verification
 
