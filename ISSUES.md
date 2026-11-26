@@ -1,6 +1,6 @@
 # Audit issues
 
-Updated 26 November 2026. The 37 published reports contain **69 numbered findings**. **26 are resolved and 43 remain open.** Of the 43 open findings, 32 have project answers and 11 await a first answer. Three resolved findings also have no recorded project answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
+Updated 26 November 2026. The 37 published reports contain **71 numbered findings**. **28 are resolved and 43 remain open.** Of the 43 open findings, 32 have project answers and 11 await a first answer. Three resolved findings also have no recorded project answer. Verified resolutions include withdrawn claims. Each report retains its attributed answers and verification history.
 
 All six original core findings now have answers, including vGLP's merged [PR #23](https://github.com/udi-shapiro/Grassroots-Audit/pull/23). The answer-based hold has therefore ended. Their revised proofs and code still require independent verification.
 
@@ -10,8 +10,8 @@ All six original core findings now have answers, including vGLP's merged [PR #23
 
 | Project | GitHub issue | Finding and report | Current position | Work required for closure |
 | --- | --- | --- | --- | --- |
-| VMAT | [#186](https://github.com/udi-shapiro/Grassroots-Audit/issues/186) | [VMAT #1 · Else effects need a class in the closure test](papers/VMAT.pdf.md#finding-1-else-effects-need-a-class-in-the-closure-test) | Open in revision (22). | Assign each else effect its then-class before comparing closures in Definition 11(b). |
-| VMAT | [#187](https://github.com/udi-shapiro/Grassroots-Audit/issues/187) | [VMAT #2 · A local volition change needs the ambient transaction set](papers/VMAT.pdf.md#finding-2-a-local-volition-change-needs-the-ambient-transaction-set) | Open in revision (22). | Define a local volition change using the ambient class set so a person can will a binary Befriend. |
+| VMAT | [#191](https://github.com/udi-shapiro/Grassroots-Audit/issues/191) | [VMAT #3 · The examples promise progress after transient enabling](papers/VMAT.pdf.md#finding-3-the-examples-promise-progress-after-transient-enabling) | Open in revision (23), §§4.1 and 4.2. | Qualify eventual execution by continuous enabling of the class. |
+| VMAT | [#192](https://github.com/udi-shapiro/Grassroots-Audit/issues/192) | [VMAT #4 · A volition change preserves the friendship graph](papers/VMAT.pdf.md#finding-4-a-volition-change-preserves-the-friendship-graph) | Open in revision (23), §4.1 after Lemma 34. | Distinguish volition changes from the two edge-changing machine steps. |
 | Calculus, with GSC | [#166](https://github.com/udi-shapiro/Grassroots-Audit/issues/166) | [Calculus paper #25 · Datatype equality does not preserve the agent occurrences used by the grassroots proof](calculus/contracts.md#finding-25-datatype-equality-does-not-preserve-the-agent-occurrences-used-by-the-grassroots-proof) | The old set-difference and empty-argument witnesses are excluded in (14). | Make the choice of a support-bearing expanded atom explicit in Appendix A. |
 | Calculus, with GSC | [#167](https://github.com/udi-shapiro/Grassroots-Audit/issues/167) | [Calculus paper #26 · Collection participants need a defined expansion and validation rule](calculus/contracts.md#finding-26-collection-participants-need-a-defined-expansion-and-validation-rule) | (14) uses scalar holders and nonempty elementwise arguments. The prior stationary-participant witness is excluded. Role guards and clearing remain outside the core. | Specify role extents and clearing if subsumption of the GSC language is claimed. |
 | Calculus, with GSC | [#168](https://github.com/udi-shapiro/Grassroots-Audit/issues/168) | [Calculus paper #27 · The change from GSC multisets to sets lacks a preservation theorem](calculus/contracts.md#finding-27-the-change-from-gsc-multisets-to-sets-lacks-a-preservation-theorem) | The change from multiset to set semantics still lacks a preservation result in (14). | Define the supported translation and its freshness or witnessing guarantee. |
@@ -58,10 +58,12 @@ The pending status above does not assert that a claimed correction is wrong. It 
 
 ## Verified corrections
 
-These are the 26 resolved numbered findings. They remain visible for history and regression tracking, with their original identifiers.
+These are the 28 resolved numbered findings. They remain visible for history and regression tracking, with their original identifiers.
 
 | Project | GitHub issue | Finding and report | Recorded verification |
 | --- | --- | --- | --- |
+| VMAT | [#186](https://github.com/udi-shapiro/Grassroots-Audit/issues/186) | [VMAT #1 · Else effects need a class in the closure test](papers/VMAT.pdf.md#finding-1-else-effects-need-a-class-in-the-closure-test) | Revision (23), Definition 11(c) assigns the else class before 11(d) tests closure disjointness; the original witness is excluded. |
+| VMAT | [#187](https://github.com/udi-shapiro/Grassroots-Audit/issues/187) | [VMAT #2 · A local volition change needs the ambient transaction set](papers/VMAT.pdf.md#finding-2-a-local-volition-change-needs-the-ambient-transaction-set) | Revision (23), Definition 4(1) and Table 1 use the ambient population and admit the binary Befriend will. |
 | Calculus | [#98](https://github.com/udi-shapiro/Grassroots-Audit/issues/98) | [Calculus paper #21 · Definition 3 excludes agent identifications used by the catalogue](calculus/contracts.md#finding-21-definition-3-excludes-agent-identifications-used-by-the-catalogue) | Definition 3 allows declared coincident agents and Definition 4 checks their combined effects. |
 | Calculus | [#100](https://github.com/udi-shapiro/Grassroots-Audit/issues/100) | [Calculus paper #23 · The allowed local constraints can exclude the designated initial state](calculus/contracts.md#finding-23-the-allowed-local-constraints-can-exclude-the-designated-initial-state) | Calculus (11), p. 5, expressly requires constraints to hold in the empty state. |
 | Calculus | [#101](https://github.com/udi-shapiro/Grassroots-Audit/issues/101) | [Calculus paper #24 · Section 4 needs to specify which runs weakening preserves](calculus/contracts.md#finding-24-section-4-needs-to-specify-which-runs-weakening-preserves) | The general claim of correct-run inclusion was withdrawn. No such theorem remains in Section 4. |
