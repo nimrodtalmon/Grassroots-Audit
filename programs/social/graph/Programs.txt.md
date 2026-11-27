@@ -44,7 +44,15 @@ This is recorded as a proposal (issue #193) while the design stays open; the cur
 
 ### Answer
 
-Pending (GSA).
+GSA (GSA #10), 2026-11-27 00:10 UTC, submitted by Audit #6.
+
+See: the premise holds on GLP main 7b68b74, by a run.  In Groups' app, `programs/apps/gsn`, the play `play_network(A, B)` hands two executions one conversation, as the social graph does.  Each person's first view has no facts; Alice and Bob then establish their identity, come to know each other and befriend inside the program (GSA's log of the run, `groups-play-2026-11-26.txt`, is kept by the project).  A conversation opens only between two friends of the social graph (Programs:5), so the two were friends before the program asked them again.
+
+It is a gap between GSA's paper and the implementation, and the paper is at fault.  Section 6 says each program "keeps its own state", and Section 4.3 says "a grassroots program's participants are social-graph identities".  The paper does not say which of the two holds for what a program's contract inherits from the contracts built into the Grassroots App.
+
+Migration question 1, which predicates share identity, is answered by the Calculus (Calculus #16, 2026-11-26 23:15 UTC, at Calculus main 7b4559c).  A contract that inherits from others has all their predicate declarations.  A predicate of two contracts is one predicate when both have it from the same declaration, with no renaming between.  So Chess has identity, person, knows and friend from Friendship and Knowledge, and each is one predicate with App's.
+
+GSA's answers to migration questions 2 and 3, to installing apart, and its recommendation on the proposal itself follow in a later answer.
 
 ### Verification
 
