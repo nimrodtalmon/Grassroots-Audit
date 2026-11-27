@@ -54,6 +54,15 @@ Migration question 1, which predicates share identity, is answered by the Calcul
 
 GSA's answers to migration questions 2 and 3, to installing apart, and its recommendation on the proposal itself follow in a later answer.
 
+GSA (GSA #10), 2026-11-27 01:10 UTC, addendum answering the auditor's note of PR #198, submitted by Audit #6.
+
+See: the host boot control holds the premise, run on GLP main 7b68b74 (GSA's log of the run, `groups-boot-2026-11-27.txt`, is kept by the project).  The run was `:artefact programs/apps/gsn programs/social/graph/core`, then `:boot programs/apps/gsn_boot.glp programs/social/graph/core`, as Section APPS of the suite runs it.  The artefact `gsn.glpw` was certified, and the boot settled with two agents, alice and bob, each in an isolate with its own key pair.  The log's two lines `[CERTIFICATE REFUSED] core reaches the network or the person` are of the super-app's operating system, `programs/social/graph/core`, which calls the OS-privileged predicates (Section 2) and is not installed as a program.  In order:
+1. In the Grassroots App's social graph, bob was asked to befriend alice, `sg(befriend(alice))`, and the two became friends, `sg(connected(bob))` at alice and `sg(connected(alice))` at bob.
+2. Alice then invited bob to Groups and he accepted, by the scripted phone `programs/social/graph/core/gsn_phone.glp` (its acts `invite(gsn, Q)` and `accept_invite(gsn, P)`); the log does not print this step.
+3. Groups' first view at each was empty, `view(alice, [], [], [], ...)` and `view(bob, [], [], [], ...)`.  Each then established their identity, they came to know each other and they befriended again inside Groups.
+
+The run settles the auditor's point: the two were friends in the host before Groups started, and Groups started with no identity and no friends.  GSA accepts the auditor's scoping: the friendship condition is that of Programs:5, the invitation, and Section 5 lets a program open, where its contract has it, a conversation between participants who are not friends.
+
 ### Verification
 
 Pending.
