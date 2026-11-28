@@ -10,13 +10,30 @@ looked for in the same directory and then anywhere in GLP, and printed as the li
 
 One line a stale report:
     programs/currencies/coins/GC.glp.md: gone at GLP <commit>; likely now programs/currencies/coins/Coins.glp
-Exit 1 if any report is stale.  Standard library only.
+A moved report leaves a stub at its old path, whose first line is "Moved: <new report path> ..." and which has no
+finding (CONTRIBUTING.md, "Keep reports at live paths"); a stub is no report, and is listed only if the report it
+names is missing:
+    programs/gsc/GSN.glp.md: stub to a missing report programs/gsc/Groups.glp.md
+The index and the public files (SKIP) are no reports.  Exit 1 if any report is stale or any stub broken.
+Standard library only.
 """
 import os, re, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP = {'README.md', 'REPORT-TEMPLATE.md', 'CONTRIBUTING.md'}
+SKIP = {'README.md', 'REPORT-TEMPLATE.md', 'CONTRIBUTING.md', 'ISSUES.md'}   # as bin/status.py
 SKIP_DIRS = {'bin', 'sections', 'docs'}
+
+
+MOVED = re.compile(r'\AMoved:[ \t]*(\S+)')
+
+
+def stub_target(text):
+    """The report path a stub names, or None where the text is a report: a stub begins "Moved: <path>" and has no
+    finding."""
+    m = MOVED.match(text.lstrip('\ufeff'))
+    if m and not re.search(r'^## Finding \d+', text, re.M):
+        return m.group(1).strip('`')
+    return None
 
 
 def renames(glp):
@@ -41,7 +58,7 @@ def find(glp, name):
     return None
 
 
-def main(argv):
+def main(argv, root=ROOT):
     if len(argv) < 2:
         sys.exit(__doc__)
     glp, papers = argv[1], (argv[2] if len(argv) > 2 else None)
@@ -51,12 +68,19 @@ def main(argv):
     except OSError:
         head = '?'
     names, stale = renames(glp), 0
-    for d, dirs, files in os.walk(ROOT):
-        rel = os.path.relpath(d, ROOT)
+    for d, dirs, files in os.walk(root):
+        rel = os.path.relpath(d, root)
         dirs[:] = sorted(x for x in dirs if not x.startswith('.') and not (rel == '.' and x in SKIP_DIRS))
         for f in sorted(files):
             p = os.path.normpath(os.path.join(rel, f))
             if not f.endswith('.md') or p in SKIP:
+                continue
+            text = open(os.path.join(root, p), encoding='utf-8').read()
+            moved = stub_target(text)
+            if moved is not None:
+                if not os.path.exists(os.path.join(root, moved)):
+                    stale += 1
+                    print('%s: stub to a missing report %s' % (p, moved))
                 continue
             target = p[:-3]
             if target.startswith('papers' + os.sep):
