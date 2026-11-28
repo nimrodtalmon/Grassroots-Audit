@@ -2,9 +2,25 @@
 
 An independent audit of the Grassroots project: its contracts, code, papers, website and organisation. The project is in [EShapiro2/GLP](https://github.com/EShapiro2/GLP) and is presented at [peoplesweb.org](https://peoplesweb.org).
 
-**Current work:** application-project contracts/code and independent verification of the six core-paper answers. All six original core findings now have answers, so the answer-based hold has ended. See [all audit issues](ISSUES.md): eight unresolved findings and eight verified corrections.
+**Villagers revision (3), 28 November 2026.** New review following the project responses. Patient control improves; Disputes and Warnings are verified on main and closed at source/schema scope. Care continuity, tool unavailability, institutional composition and tennis quota calculation remain. New finding: Ads promises funded budgets and payments but its pragmas only record flags. All 56 inherited contracts regenerate; 16 fetched catalogue schemas match. [New review](papers/Villagers-review-2026-11-28.md) · [Stable findings](papers/Villagers.pdf.md) · [Replay results](papers/villagers-controls-2026-11-28.json)
 
-The primary audit repository is **[udi-shapiro/Grassroots-Audit](https://github.com/udi-shapiro/Grassroots-Audit)**. It is public. GPT auditors maintain `main`; Claude submits pull requests here with project responses and references to fixes in GLP. Auditors preserve those responses and independently verify corrections. Anyone may contribute or comment. **Pull requests are open to everyone**, including contributors using forks; see [the contribution instructions](CONTRIBUTING.md#contributions-from-anyone).
+**Villagers revision (2), full social review and source controls, 25 November 2026.** The six-page revision substantially improves care, tools, works and emergencies. Five earlier findings are resolved at their stated scope. Remaining issues concern care continuity, tool availability, institutional boundaries and adoption of inherited fixes. All 56 inherited master texts were read; candidate Disputes/Warnings schemas and the website parser/renderer were tested independently. The six new components' own pragmas and live site remain outside verified coverage. [Current review](papers/Villagers.pdf.md) · [Website verification](servers/peoplesweb/tools/build.py.md) · [Replay results](papers/villagers-revision-controls-2026-11-25.json)
+
+**Villagers and village life, 24 November 2026.** All 57 selected contracts and their 71 parent references match the catalogue. The combined contract changes who can book ordinary rooms. The review examines care, shared equipment, collective works and civic notices and records five findings. [Full review](papers/Villagers__Village_Life_Grassroots_Contract.pdf.md) · [PDF](papers/villagers-village-life-review-2026-11-24.pdf) · [Reproduction script](papers/villagers-replay-2026-11-24.py)
+
+**Grassroots Contracts Calculus, five-page revision and 91-contract verification, 24 November 2026.** Six of eight earlier paper findings are resolved. The abstract still claims two unproved theorems. All 91 contracts regenerate, while two generated terms change who can retire a ward. [Combined review (PDF)](calculus/calculus-verification-2026-11-24.pdf) · [Paper review and source evidence](calculus/contracts.md#review-of-the-five-page-revision-24-november-2026) · [91-contract ledger](calculus/catalogue-verification-2026-11-24.csv)
+
+**Earlier 34-page manuscript, 24 November 2026.** Paper review of the revised operations, operational semantics, proofs and 66-contract table. [Paper review (PDF)](calculus/grassroots_contracts_calculus_review_2026-11-24.pdf) · [Findings and evidence](calculus/contracts.md#paper-review-24-november-2026)
+
+**Contract generation and inheritance, 23 November 2026.** All 91 contracts generate, and all 148 declared relation steps pass on a fresh build. Two checked-in expansions are stale. The report also identifies two discrepancies between the paper’s §3 and the published derivations. [Report](calculus/contracts.md#contract-generation-and-inheritance-23-november-2026) · [91-contract results (CSV)](calculus/contract-generation-2026-11-23.csv)
+
+**Grassroots contracts and their relations, 20 November 2026.** The review covers 87 contracts and 141 declared relation steps. The review records seven numbered findings. [Full report (PDF)](calculus/grassroots_contracts_review.pdf) · [Findings and evidence](calculus/contracts.md)
+
+Application-project audits and independent verification of the six core-paper answers continue. [Audit findings and current status](ISSUES.md) · [GitHub issues](https://github.com/udi-shapiro/Grassroots-Audit/issues)
+
+Publish every completed Grassroots Review report in **[udi-shapiro/Grassroots-Audit](https://github.com/udi-shapiro/Grassroots-Audit)**. This is the public record for reports prepared in review sessions and by project auditors. GPT auditors maintain `main`; Claude submits pull requests here with project responses and references to fixes in GLP. Auditors preserve those responses and independently verify corrections. Anyone may contribute or comment. **GitHub Issues is enabled, and pull requests are open to everyone**, including contributors using forks; see [the contribution instructions](CONTRIBUTING.md#contributions-from-anyone).
+
+**Where to send a pull request** (Udi, 2026-11-19): a collaborator sends a pull request to [EShapiro2/GLP](https://github.com/EShapiro2/GLP) for the project they work on, by GLP's [CONTRIBUTING.md](https://github.com/EShapiro2/GLP/blob/main/CONTRIBUTING.md); and to this repository for the project as a whole, or for an area they do not work on.  A pull request here is passed to the project responsible, as a finding is.
 
 There is one GPT auditor for each Claude project, responsible for that project's papers and code together. The audit organisation follows the website's exact project, paper, contract and artifact hierarchy, including the named responsibilities under Code. The roster and its source commit are reproduced in the audit document.
 
@@ -42,7 +58,7 @@ The audit has started in stages. Stage 1 publishes the [source and ownership bas
 
 All new audit contributions and Claude response PRs target **this repository**. Claude opens each response PR from a branch of this repository, based on its current `main`, and pushes to neither `main` nor `GPT-Auditor`.
 
-## Latest audit status: 17 November 2026
+## Audit status on 17 November 2026
 
 [PR #21](https://github.com/udi-shapiro/Grassroots-Audit/pull/21) records the answers to GLP-Spec #1 and IGLP #1–2; [PR #23](https://github.com/udi-shapiro/Grassroots-Audit/pull/23) records vGLP #1. Together with sGLP's two earlier answers, all six original core findings are now answered. The hold has ended; the six corrections remain pending independent verification. Merged [PR #24](https://github.com/udi-shapiro/Grassroots-Audit/pull/24) records GB's remaining escrow correction as an undertaking in Notes:4. Its verification is also pending. [ISSUES.md](ISSUES.md) indexes every numbered finding, its response and the next verification step.
 

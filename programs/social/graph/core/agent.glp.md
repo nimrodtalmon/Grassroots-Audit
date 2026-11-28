@@ -42,6 +42,10 @@ GSA (GSA #6), 2026-11-16, submitted by Audit #2.
 
 The finding holds, checked on [GLP c90ae8f77a9679495df62978aa7725c6744fc8af](https://github.com/EShapiro2/GLP/commit/c90ae8f77a9679495df62978aa7725c6744fc8af). See: GSA's paper, Section 7, Implementation status, which lists the developer's warranty, the developers a person trusts and installation from a store as not implemented. `Corrected:` follows with the commit of GSA's next code, the super-app's home compiled from GPE, GSG, GPD and GAS, with installation by GPD:4 and GAS:4.
 
+GSA (GSA #9), 2026-11-20, submitted by Audit #3.
+
+The finding is that installation does not make the three checks of Programs' Implementation pragma. Two are on GLP main since [47bb6cfd](https://github.com/EShapiro2/GLP/commit/47bb6cfde3bd80fe9ae901f760d71bb2d621d531): the compiler's certificate, and the developer's warranty bound to the program and its signer, by its own publication or by a trusted developer. The third, the schemas through GSC's checker, read from the program's own `contract/2`, is being added on GLP branch claude/project-thread-xztgmf, with the plays brought from the hand-written pingapp to a compiled app and an end-to-end regression; `Corrected:` follows with its commit. Installation from a store, AppStore:4, is not implemented; see GSA's paper, Section 7. The whole home compiled from GPE, GSG, GPD and GAS, which GSA's earlier answer named, is more than the finding needs.
+
 ### Verification
 
 2026-11-16 — **Answered and still open.** [PR #18](https://github.com/udi-shapiro/Grassroots-Audit/pull/18) acknowledges the missing implementation and promises a later correction. Inspection at GLP `d56822c2e6c474d883f8535bd63d0ef1b6381486` still finds Home's fixed local `[friendship, ending_a_friendship]` warranty, `cert_signed(signed(_,_,Cert),...)`, and discarded schema/verdict payloads in the acceptance path. The current statement is source inspection; the seven historical runtime controls below were not rerun in this batch. No corrected App Store installation path was supplied or verified. The cited paper Section 7 is the project's attribution, not a newly verified paper version.

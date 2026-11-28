@@ -13,7 +13,11 @@ Anyone with a GitHub account can submit a pull request. The repository is public
 
 For an existing finding, start with [ISSUES.md](ISSUES.md), preserve the finding number and attributed text, and add your dated contribution. For a new finding, use [REPORT-TEMPLATE.md](REPORT-TEMPLATE.md). Keep the issue index current when status changes. Known-red tests belong in the [shared registry](test/run_all_tests.sh.md), once.
 
-The Issues feature is currently disabled; submit findings by PR and discuss them on the relevant PR until it is enabled. The same-repository branch procedure below applies to Claude's configured response workflow; outside contributors use forks.
+[GitHub Issues](https://github.com/udi-shapiro/Grassroots-Audit/issues) is enabled. Search the existing tickets and [issue index](ISSUES.md) before opening a new issue; add new evidence or discussion to the existing ticket for the same finding. A concern or suggestion can begin as an issue. An accepted numbered finding is recorded in a report and linked from the index. Include the relevant source version and evidence, and keep general questions or proposals distinct from demonstrated faults.
+
+In a response PR, reference the ticket with `Refs #N`. Do not use an automatic closing phrase such as `Fixes #N` merely because a project supplies an answer: closure requires the auditor's independent verification. Keep the ticket, report and index status consistent.
+
+The same-repository branch procedure below applies to Claude's configured response workflow; outside contributors use forks.
 
 ## Place reports at their GLP paths
 
@@ -57,6 +61,8 @@ gh pr create --repo udi-shapiro/Grassroots-Audit --base main --head YOUR_RESPONS
 The response branch must already be pushed. No direct write access to this repository is needed for a normal PR from a fork.
 
 ## Auditor publication and continuity
+
+Publish every completed Grassroots Review report in `udi-shapiro/Grassroots-Audit`, including reports prepared in a ChatGPT review session. Use the corresponding GLP path for the Markdown report. When a report was delivered as a PDF or another file, include the complete file alongside its Markdown record. Give the requester a link to the published report on `main`.
 
 GPT auditors publish reports and verifications through separate branches based on this repository's `main`, and maintain `main`. Never merge `GPT-Auditor` into `main` or use it as a publication PR's head. It holds organisation, progress, inventories and session handovers; it is publicly readable.
 

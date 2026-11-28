@@ -1,0 +1,92 @@
+contract,directory,commute,flat_return,logic_pragma_recovery,declared_steps,regenerated_steps_passed,published_steps_passed,direct_schemas_identical,expanded_schemas_identical,flat_text_identical,published_expanded_git_blob,regenerated_expanded_git_blob
+Ads,Ads,yes,yes,same,1,1,1,yes,yes,yes,3fe17015a62d274908fd70b88cfafc90aa012709,3fe17015a62d274908fd70b88cfafc90aa012709
+Agents,Agents,yes,yes,same,5,5,5,yes,yes,yes,f43c219bef646bbfa54f9baf6eafe90eafc38947,f43c219bef646bbfa54f9baf6eafe90eafc38947
+Agora,Agora,yes,yes,same,1,1,1,yes,yes,yes,a548577476cb7d92334c05483684b4c2e1c848ce,a548577476cb7d92334c05483684b4c2e1c848ce
+Anonymous Matching,Anonymous-Matching,yes,yes,same,2,2,2,yes,yes,yes,811a8432215da5200e95f8bb4273e596a935143c,811a8432215da5200e95f8bb4273e596a935143c
+Anonymous Rendezvous,Anonymous-Rendezvous,yes,yes,same,1,1,1,yes,yes,yes,8469ed12081c92f5b1dc6ba6fb5d48b199966edf,8469ed12081c92f5b1dc6ba6fb5d48b199966edf
+App,App,yes,yes,same,1,1,1,yes,yes,yes,3c330819f52247833a6f2178caddbd7198d908b0,3c330819f52247833a6f2178caddbd7198d908b0
+AppStore,AppStore,yes,yes,same,2,2,2,yes,yes,yes,d53795242a2ff6283b104c278f28cf9fe2033c8c,d53795242a2ff6283b104c278f28cf9fe2033c8c
+Appointments,Appointments,yes,yes,same,1,1,1,yes,yes,yes,f3d8a4f6d835d8c1a5fa5a42816cfc7c7a21798b,f3d8a4f6d835d8c1a5fa5a42816cfc7c7a21798b
+Auction,Auction,yes,yes,equivalent,1,1,1,yes,yes,yes,56bd239034e37d3bd2e38ff9c7fb2602e4d18050,56bd239034e37d3bd2e38ff9c7fb2602e4d18050
+Backchannel Feeds,Backchannel-Feeds,yes,yes,same,1,1,1,yes,yes,yes,2a1b1c990a8e13ad574efae8b3b1151569198196,2a1b1c990a8e13ad574efae8b3b1151569198196
+Backed Community,Backed-Community,yes,yes,same,2,2,2,yes,yes,yes,35aba09fcf0c650c590317edc82c01eb5b91e31a,35aba09fcf0c650c590317edc82c01eb5b91e31a
+Bank,Bank,yes,yes,same,1,1,1,yes,yes,yes,1959ae08a836f05f6a20892d66cf4c4e5e0a73fc,1959ae08a836f05f6a20892d66cf4c4e5e0a73fc
+Bonds,Bonds,yes,yes,same,2,2,2,yes,yes,yes,cf0c96166fa2c7b9105065db51359717c463088a,cf0c96166fa2c7b9105065db51359717c463088a
+Booking,Booking,yes,yes,equivalent,1,1,1,yes,yes,yes,d60af2421f8c38ea459a226aeb9988b0399af0cb,d60af2421f8c38ea459a226aeb9988b0399af0cb
+Carpool,Carpool,yes,yes,same,1,1,1,yes,yes,yes,09d51f6e1548803a7a1e9cdb4ae5feda972e8901,09d51f6e1548803a7a1e9cdb4ae5feda972e8901
+Central Bank,Central-Bank,yes,yes,equivalent,3,3,3,yes,yes,yes,ec19f26e70f1b98caa3e87777d48f053283934dc,ec19f26e70f1b98caa3e87777d48f053283934dc
+Children,Children,yes,yes,same,3,3,3,yes,yes,yes,eab1d9658d433ed343deff6fac1c65e739f55485,eab1d9658d433ed343deff6fac1c65e739f55485
+Coins,Coins,yes,yes,same,2,2,2,yes,yes,yes,6198100819c9dd13ee78ac31de3dfe92723c51c9,6198100819c9dd13ee78ac31de3dfe92723c51c9
+Commercial Bank,Commercial-Bank,yes,yes,equivalent,3,3,3,yes,yes,yes,e25fc7d56edd2b53f42932cb90b8d76904de7756,e25fc7d56edd2b53f42932cb90b8d76904de7756
+Community Bank,Community-Bank,yes,yes,same,3,3,3,yes,yes,yes,8fa4472e89a66daab8b78feeb473a675b1e168b0,8fa4472e89a66daab8b78feeb473a675b1e168b0
+Community Market,Community-Market,yes,yes,same,2,2,2,yes,yes,yes,0b5119e8f999aa60f07f419b9a422edebf1acf60,0b5119e8f999aa60f07f419b9a422edebf1acf60
+Community Network,Community-Network,yes,yes,same,3,3,3,yes,yes,yes,506a0e1af2fc7a98779b78fe5d0be5827940052c,506a0e1af2fc7a98779b78fe5d0be5827940052c
+Community,Community,yes,yes,same,2,2,2,yes,yes,yes,d1241b4fd203dbba7cc38dfd8d3b724afb3ae2a9,d1241b4fd203dbba7cc38dfd8d3b724afb3ae2a9
+Constitution,Constitution,yes,yes,same,2,2,2,yes,yes,yes,48b86fc7738c2d1ecddf8b08d8b39d54628c5796,48b86fc7738c2d1ecddf8b08d8b39d54628c5796
+Consumers' Cooperative,Consumers-Cooperative,yes,yes,same,3,3,3,yes,yes,yes,46016ecbce178083367bf71c71d2e7782798f485,46016ecbce178083367bf71c71d2e7782798f485
+Cooperative DAO,Cooperative-DAO,yes,yes,same,1,1,1,yes,yes,yes,0421d981d0c7b5b89c1e0f0f48a8e343c2fb90d2,0421d981d0c7b5b89c1e0f0f48a8e343c2fb90d2
+Cooperative,Cooperative,yes,yes,same,1,1,1,yes,yes,yes,f8da5509e32b024f33bba2330f9c760af2c19274,f8da5509e32b024f33bba2330f9c760af2c19274
+Corporation,Corporation,yes,yes,same,1,1,1,yes,yes,yes,5e84dbb94de45c79d0f884deb04d841b480dceca,5e84dbb94de45c79d0f884deb04d841b480dceca
+DAO,DAO,yes,yes,same,1,1,1,yes,yes,yes,cb738fe2b33a2794f7f9fd859039b46f18ca5761,cb738fe2b33a2794f7f9fd859039b46f18ca5761
+Dating,Dating,yes,yes,same,1,1,1,yes,yes,yes,424428a114aa9cb933efaaac0337fdd0b0ed5973,424428a114aa9cb933efaaac0337fdd0b0ed5973
+Democratic Community,Democratic-Community,yes,yes,same,1,1,1,yes,yes,yes,1b28a4a2eeef543fc87d0267c3d5bec3492c98b2,1b28a4a2eeef543fc87d0267c3d5bec3492c98b2
+Denominated Coins,Denominated-Coins,yes,yes,equivalent,2,2,2,yes,yes,yes,23b32259096c051aca25486dca14074315afd008,23b32259096c051aca25486dca14074315afd008
+Denominated Currencies,Denominated-Currencies,yes,yes,equivalent,3,3,3,yes,yes,yes,cc8fe399708275cb5d4433d766ba1659224fb100,cc8fe399708275cb5d4433d766ba1659224fb100
+Directory,Directory,yes,yes,equivalent,1,1,1,yes,yes,yes,57ad078161a0f869dcfd7a548fc3e9f47ecc2e3e,57ad078161a0f869dcfd7a548fc3e9f47ecc2e3e
+Disputes,Disputes,yes,yes,same,1,1,1,yes,yes,yes,7bcf09d480169cac5249f7c7e5c96a08093c8359,7bcf09d480169cac5249f7c7e5c96a08093c8359
+Distrust,Distrust,yes,yes,same,1,1,1,yes,yes,yes,bf074c89a7cdb11bceab95d19658497dfc564fd7,bf074c89a7cdb11bceab95d19658497dfc564fd7
+Encounters,Encounters,yes,yes,equivalent,1,1,1,yes,yes,yes,17cafc40bcb6d21cabe80f5de917fedf4fa3b5cc,17cafc40bcb6d21cabe80f5de917fedf4fa3b5cc
+Feeds,Feeds,yes,yes,same,2,2,2,yes,yes,yes,0d12e66b59005786b18367f9f314a3e38ac12dd3,0d12e66b59005786b18367f9f314a3e38ac12dd3
+Forwarding,Forwarding,yes,yes,same,1,1,1,yes,yes,yes,a8d2f929f16c80be12597955598eb49fc121e358,a8d2f929f16c80be12597955598eb49fc121e358
+Foundation,Foundation,yes,yes,equivalent,2,2,2,yes,yes,yes,3eafa8c8978f238154f01f048c1b1f093a833ef5,3eafa8c8978f238154f01f048c1b1f093a833ef5
+Free Matching,Free-Matching,yes,yes,same,1,1,1,yes,yes,yes,2f4501c9f5c607ec3d6f1904af5f4fb2da8b1585,2f4501c9f5c607ec3d6f1904af5f4fb2da8b1585
+Friendship,Friendship,yes,yes,same,1,1,1,yes,yes,yes,b36761e98505236cdf1bf24c7d6e331d7ef75d71,b36761e98505236cdf1bf24c7d6e331d7ef75d71
+Funded DAO,Funded-DAO,yes,yes,same,1,1,1,yes,yes,yes,99d55a1ade636b0edfc84cff837c37bf37a52878,99d55a1ade636b0edfc84cff837c37bf37a52878
+Gigs,Gigs,yes,yes,same,2,2,2,yes,yes,yes,dc60fcb6f6fd58376fcd287bc5ffaf1e896f3155,dc60fcb6f6fd58376fcd287bc5ffaf1e896f3155
+Gossip,Gossip,yes,yes,same,1,1,1,yes,yes,yes,0dba9235657cdfc80fb8f440726929c48fcaf686,0dba9235657cdfc80fb8f440726929c48fcaf686
+Groups,Groups,yes,yes,equivalent,2,2,2,yes,yes,yes,8af33ab82e4bf972718cd95eed6e64913895eeed,8af33ab82e4bf972718cd95eed6e64913895eeed
+Guardians,Guardians,yes,yes,equivalent,2,2,2,yes,yes,yes,ead3e81c9f1d74194e986289eedb6f991b4da0f9,ead3e81c9f1d74194e986289eedb6f991b4da0f9
+Help,Help,yes,yes,same,1,1,1,yes,yes,yes,7b2760a497255b5aa1f4440e47e57a7eca918622,7b2760a497255b5aa1f4440e47e57a7eca918622
+Home Exchange,Home-Exchange,yes,yes,same,1,1,1,yes,yes,yes,0427a7cccf8119ce08bdb2f2d1b6b5cc556a392f,0427a7cccf8119ce08bdb2f2d1b6b5cc556a392f
+Jobs,Jobs,yes,yes,same,1,1,1,yes,yes,yes,a064ec3a224fc46c1177e18076839d43485b4c74,a064ec3a224fc46c1177e18076839d43485b4c74
+Joint Accounts,Joint-Accounts,yes,yes,same,1,1,1,yes,yes,yes,ab7518f1239e249ebbb7c77245e962c6053f490f,ab7518f1239e249ebbb7c77245e962c6053f490f
+Knowledge,Knowledge,yes,yes,same,0,0,0,yes,yes,yes,45ebc655c77b9566d44c41ee52c9bb43fc3317f9,45ebc655c77b9566d44c41ee52c9bb43fc3317f9
+Labelled Overlay,Labelled-Overlay,yes,yes,same,2,2,2,yes,yes,yes,8d1223b779f41fe8851a175249c974d3d2d765da,8d1223b779f41fe8851a175249c974d3d2d765da
+Lending,Lending,yes,yes,same,1,1,1,yes,yes,yes,07c8a960c74dff998eb73798764f9306ca25e416,07c8a960c74dff998eb73798764f9306ca25e416
+Library,Library,yes,yes,same,1,1,1,yes,yes,yes,11fdc29cfb964fad7385ce0bc21b6cfbbd684096,11fdc29cfb964fad7385ce0bc21b6cfbbd684096
+Liquid Cooperative,Liquid-Cooperative,yes,yes,same,1,1,1,yes,yes,yes,729ccdeea7309442bd45ff1806bad516efc5ed2a,729ccdeea7309442bd45ff1806bad516efc5ed2a
+Liquid DAO,Liquid-DAO,yes,yes,same,1,1,1,yes,yes,yes,5e1cb3850dbcb43e141167b8d8b25f0401ffcad9,5e1cb3850dbcb43e141167b8d8b25f0401ffcad9
+Local Overlay,Local-Overlay,yes,yes,same,1,1,1,yes,yes,yes,b816a3d3d80d32bb2376d384e3b5e3a9895c1470,b816a3d3d80d32bb2376d384e3b5e3a9895c1470
+Lodging,Lodging,yes,yes,same,2,2,2,yes,yes,yes,51d0d218df94eb1fd1ec0543dea10971bafb3f88,51d0d218df94eb1fd1ec0543dea10971bafb3f88
+Lost and Found,Lost-and-Found,yes,yes,same,1,1,1,yes,yes,yes,b5c2a3d0bfa297782a9e7dbafc04f4dcf7b685c1,b5c2a3d0bfa297782a9e7dbafc04f4dcf7b685c1
+Matching,Matching,yes,yes,same,1,1,1,yes,yes,yes,acbf65fabc36b6a1b09041a72089c00ee6d1f839,acbf65fabc36b6a1b09041a72089c00ee6d1f839
+Meeting Rooms,Meeting-Rooms,yes,yes,same,1,1,1,yes,yes,yes,e05e1fdda5ed5192db591ed984c6a33855e4330c,e05e1fdda5ed5192db591ed984c6a33855e4330c
+Mutual Credit,Mutual-Credit,yes,yes,same,3,3,3,yes,yes,yes,dd89b485cc97feb162f11fffa568a2b99c42886d,dd89b485cc97feb162f11fffa568a2b99c42886d
+Nonprofit,Nonprofit,yes,yes,same,1,1,1,yes,yes,yes,af1fc6cea196cb5675eba0cb5ba031ad4e0cf92c,af1fc6cea196cb5675eba0cb5ba031ad4e0cf92c
+Notes,Notes,yes,yes,same,1,1,1,yes,yes,yes,7283765665a8c39f68420cc5bc89666cb5542ecc,7283765665a8c39f68420cc5bc89666cb5542ecc
+Organisation,Organisation,yes,yes,same,4,4,4,yes,yes,yes,b2bfca808fdf6dfbda70d214aebd2737d48a3689,b2bfca808fdf6dfbda70d214aebd2737d48a3689
+Overlay,Overlay,yes,yes,same,1,1,1,yes,yes,yes,ac63d104f1421c9f8d8b9729cc0733558252b575,ac63d104f1421c9f8d8b9729cc0733558252b575
+Partners,Partners,yes,yes,same,1,1,1,yes,yes,yes,453a32b96a0a6b9a0e82fe6270ab3692193de283,453a32b96a0a6b9a0e82fe6270ab3692193de283
+Partnership,Partnership,yes,yes,equivalent,2,2,2,yes,yes,yes,c45d7ead35e4b97e0fe5cc772f1b341e9013e2c4,c45d7ead35e4b97e0fe5cc772f1b341e9013e2c4
+Programs,Programs,yes,yes,same,1,1,1,yes,yes,yes,6ea0e856e8db6d3bf3297c4be07b3eea58b3c0d8,6ea0e856e8db6d3bf3297c4be07b3eea58b3c0d8
+Promoted Gossip,Promoted-Gossip,yes,yes,same,3,3,3,yes,yes,yes,c3eb38433d89be04953dc87f6cf398c45656b51a,c3eb38433d89be04953dc87f6cf398c45656b51a
+Provenance Groups,Provenance-Groups,yes,yes,equivalent,4,4,4,yes,yes,yes,d310901f57d7ae9e73ca65b149ddabc34fdac924,d310901f57d7ae9e73ca65b149ddabc34fdac924
+Recommendations,Recommendations,yes,yes,same,1,1,1,yes,yes,yes,40d92906cf6b5df3dcc8ed68a6cc6e69fabb71a0,40d92906cf6b5df3dcc8ed68a6cc6e69fabb71a0
+Rehearsal Rooms,Rehearsal-Rooms,yes,yes,same,2,2,1,yes,no,no,cc103d953360195ec6c8ce9c012a7ab64f308341,f81db6cc081e1225b837eeb2fa2356a75d71e243
+Rendezvous,Rendezvous,yes,yes,same,1,1,1,yes,yes,yes,6916fb22a3d1a25e02c5ba9e6ba70cae58a4daf8,6916fb22a3d1a25e02c5ba9e6ba70cae58a4daf8
+Resilient Feeds,Resilient-Feeds,yes,yes,same,1,1,1,yes,yes,yes,f13c05f0fcf9c534d5bb25458c56b1e30ec210eb,f13c05f0fcf9c534d5bb25458c56b1e30ec210eb
+Rides,Rides,yes,yes,equivalent,3,3,3,yes,yes,yes,021e30e622e6e59bb3b718f3321b07f5bfe706c5,021e30e622e6e59bb3b718f3321b07f5bfe706c5
+Second-Score Auction,Second-Score-Auction,yes,yes,same,2,2,2,yes,yes,yes,90fb64a31e00be439249667e0dbdb94a4eea96cc,90fb64a31e00be439249667e0dbdb94a4eea96cc
+Secure Friendship,Secure-Friendship,yes,yes,same,1,1,1,yes,yes,yes,83a1339e7af6a1a7bd420eaf6988c9d8c1f0aac9,83a1339e7af6a1a7bd420eaf6988c9d8c1f0aac9
+Separating Distrust,Separating-Distrust,yes,yes,same,1,1,1,yes,yes,yes,aeebc58cf21d415091b854bfbbb4719761c97e0a,aeebc58cf21d415091b854bfbbb4719761c97e0a
+Services,Services,yes,yes,same,1,1,1,yes,yes,yes,7a9ebca89861420b96c0e64c553cd11777668939,7a9ebca89861420b96c0e64c553cd11777668939
+Shareholding Corporation,Shareholding-Corporation,yes,yes,same,3,3,3,yes,yes,yes,8847b126fc4d6ad0750ec772897f0fd6e4d3842b,8847b126fc4d6ad0750ec772897f0fd6e4d3842b
+Shares,Shares,yes,yes,same,1,1,1,yes,yes,yes,67cf86ff60e3609af45d2223917b23f1d2448360,67cf86ff60e3609af45d2223917b23f1d2448360
+Short Feeds,Short-Feeds,yes,yes,same,1,1,1,yes,yes,yes,997ec67d838b254fb736ce39e7266ce172b453b1,997ec67d838b254fb736ce39e7266ce172b453b1
+Single-Person Company,Single-Person-Company,yes,yes,same,2,2,2,yes,yes,yes,f755508955b2868fa221aa8c582e2d2901d347fa,f755508955b2868fa221aa8c582e2d2901d347fa
+Stays,Stays,yes,yes,same,1,1,1,yes,yes,yes,f53c11ce28967ae20d36b6e34baf89964a200c27,f53c11ce28967ae20d36b6e34baf89964a200c27
+Tennis Courts,Tennis-Courts,yes,yes,same,3,3,2,yes,no,no,3d7e1358f9edc4f52c7032817a86d59bfe71a4e4,d612a4df3e70fa6d0fd39912d0712063e23ec21f
+Trading Company,Trading-Company,yes,yes,same,1,1,1,yes,yes,yes,ed09493cf85dedcf1d22b802df0fdfbd4e867e37,ed09493cf85dedcf1d22b802df0fdfbd4e867e37
+Warded Groups,Warded-Groups,yes,yes,same,3,3,3,yes,yes,yes,36daf507112f87f85a925b575756212fd0afc044,36daf507112f87f85a925b575756212fd0afc044
+Warnings,Warnings,yes,yes,same,2,2,2,yes,yes,yes,90390816b233942281cb4cdc27e581962e94fbf8,90390816b233942281cb4cdc27e581962e94fbf8
+Workers' Cooperative,Workers-Cooperative,yes,yes,same,2,2,2,yes,yes,yes,2d262fa4868a7d9e15f02a36e1f90d265fea56e3,2d262fa4868a7d9e15f02a36e1f90d265fea56e3
